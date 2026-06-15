@@ -1,0 +1,115 @@
+2026-06-15 08:31:17,921 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
+2026-06-15 08:31:18,230 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:18,261 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-15 08:31:18,514 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:18,528 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-15 08:31:18,533 [INFO] sentence_transformers.base.model: Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-06-15 08:31:18,764 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:18,776 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-15 08:31:19,011 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:19,013 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-15 08:31:19,025 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-06-15 08:31:19,255 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:19,268 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-15 08:31:19,562 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:19,578 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-15 08:31:19,866 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-15 08:31:20,174 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:20,186 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-15 08:31:20,993 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-15 08:31:21,300 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-15 08:31:21,609 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-15 08:31:21,915 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-15 08:31:22,222 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:22,236 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-15 08:31:22,533 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:22,548 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-15 08:31:22,837 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:22,849 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-15 08:31:23,144 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:23,159 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-15 08:31:23,451 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-15 08:31:23,757 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-15 08:31:24,269 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:31:24,286 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-15 08:31:24,577 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-06-15 08:31:25,070 [INFO] attack_rag: Downloading ATT&CK STIX from GitHub...
+2026-06-15 08:31:26,977 [INFO] attack_rag: Cached STIX at M:\cyber_intel\data\chromadb\attack_stix.json
+2026-06-15 08:31:27,923 [INFO] attack_rag: Parsed 697 techniques from STIX
+2026-06-15 08:32:22,739 [INFO] attack_rag: Ingestion complete — 697 techniques indexed.
+2026-06-15 08:36:02,798 [INFO] rss_ingestor: Fetching feed: The Hacker News
+2026-06-15 08:36:05,770 [INFO] rss_ingestor: Fetching feed: BleepingComputer
+2026-06-15 08:36:07,032 [INFO] rss_ingestor: Fetching feed: The Record
+2026-06-15 08:36:08,586 [INFO] rss_ingestor: Fetching feed: Krebs on Security
+2026-06-15 08:36:09,952 [INFO] rss_ingestor: Fetching feed: Dark Reading
+2026-06-15 08:36:13,032 [INFO] rss_ingestor: Fetching feed: Schneier on Security
+2026-06-15 08:36:13,866 [INFO] rss_ingestor: Fetching feed: CyberScoop
+2026-06-15 08:36:14,332 [INFO] rss_ingestor: Fetching feed: SecurityWeek
+2026-06-15 08:36:16,549 [INFO] rss_ingestor: Total articles collected: 2
+2026-06-15 08:36:16,551 [INFO] scraper: Extracting: https://www.schneier.com/blog/archives/2026/06/upcoming-speaking-engagements-57.
+2026-06-15 08:36:17,012 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/fbi-disrupts-massive-ai-powered-p
+2026-06-15 08:36:18,620 [INFO] scraper: Extraction complete: 2/2 articles succeeded
+2026-06-15 08:36:18,694 [INFO] database: Database ready: sqlite:///M:\cyber_intel/data/cti.db
+2026-06-15 08:36:18,714 [INFO] llm_analyzer: [1/2] Upcoming Speaking Engagements
+2026-06-15 08:36:18,715 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Upcoming Speaking Engagements
+2026-06-15 08:39:39,694 [INFO] llm_analyzer: [2/2] FBI disrupts massive AI-powered phishing service using a mil
+2026-06-15 08:39:39,695 [INFO] llm_analyzer: Analyzing [qwen3:8b]: FBI disrupts massive AI-powered phishing service using a million URLs
+2026-06-15 08:49:48,822 [ERROR] llm_analyzer: LLM failed for 'FBI disrupts massive AI-powered phishing service using a mil': RetryError[<Future at 0x1e567243fb0 state=finished raised ReadTimeout>]
+2026-06-15 08:49:48,876 [INFO] report_generator: Report written: M:\cyber_intel\reports\2026-06-14_Upcoming_Speaking_Engagements.md
+2026-06-15 08:49:48,880 [INFO] report_generator: Report written: M:\cyber_intel\reports\2026-06-14_FBI_disrupts_massive_AI-powered_phishing_service_u.md
+2026-06-15 08:49:48,886 [INFO] report_generator: IOC CSV: M:\cyber_intel\reports\2026-06-15_iocs.csv (0 IOCs)
+2026-06-15 08:52:00,493 [INFO] rss_ingestor: Fetching feed: The Hacker News
+2026-06-15 08:52:03,120 [INFO] rss_ingestor: Fetching feed: BleepingComputer
+2026-06-15 08:52:05,072 [INFO] rss_ingestor: Fetching feed: The Record
+2026-06-15 08:52:07,153 [INFO] rss_ingestor: Fetching feed: Krebs on Security
+2026-06-15 08:52:08,473 [INFO] rss_ingestor: Fetching feed: Dark Reading
+2026-06-15 08:52:11,028 [INFO] rss_ingestor: Fetching feed: Schneier on Security
+2026-06-15 08:52:12,380 [INFO] rss_ingestor: Fetching feed: CyberScoop
+2026-06-15 08:52:13,536 [INFO] rss_ingestor: Fetching feed: SecurityWeek
+2026-06-15 08:52:18,137 [INFO] rss_ingestor: Total articles collected: 2
+2026-06-15 08:52:18,143 [INFO] scraper: Extracting: https://www.schneier.com/blog/archives/2026/06/upcoming-speaking-engagements-57.
+2026-06-15 08:52:19,356 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/fbi-disrupts-massive-ai-powered-p
+2026-06-15 08:52:21,698 [INFO] scraper: Extraction complete: 2/2 articles succeeded
+2026-06-15 08:52:21,752 [INFO] database: Database ready: sqlite:///M:\cyber_intel/data/cti.db
+2026-06-15 08:52:21,780 [INFO] llm_analyzer: [1/2] Upcoming Speaking Engagements
+2026-06-15 08:52:21,780 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Upcoming Speaking Engagements
+2026-06-15 08:52:44,170 [INFO] llm_analyzer: [2/2] FBI disrupts massive AI-powered phishing service using a mil
+2026-06-15 08:52:44,170 [INFO] llm_analyzer: Analyzing [qwen3:8b]: FBI disrupts massive AI-powered phishing service using a million URLs
+2026-06-15 08:56:12,665 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:12,676 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+2026-06-15 08:56:12,697 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-15 08:56:12,974 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:12,986 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-15 08:56:12,991 [INFO] sentence_transformers.base.model: Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
+2026-06-15 08:56:13,279 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:13,291 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
+2026-06-15 08:56:13,587 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:13,599 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
+2026-06-15 08:56:13,896 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:13,910 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
+2026-06-15 08:56:14,203 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:14,220 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
+2026-06-15 08:56:14,509 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
+2026-06-15 08:56:14,816 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:14,826 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-15 08:56:15,430 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
+2026-06-15 08:56:15,737 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-15 08:56:16,045 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-15 08:56:16,353 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
+2026-06-15 08:56:16,659 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:16,672 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-15 08:56:16,969 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:16,983 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-15 08:56:17,273 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:17,286 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
+2026-06-15 08:56:17,580 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:17,596 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
+2026-06-15 08:56:17,888 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
+2026-06-15 08:56:18,196 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
+2026-06-15 08:56:18,617 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
+2026-06-15 08:56:18,629 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
+2026-06-15 08:56:18,913 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
+2026-06-15 08:56:19,953 [INFO] hunt_generator: Hunt generation: 8 hypotheses (5 huntable) for 'FBI disrupts massive AI-powered phishing service u'
+2026-06-15 08:56:19,987 [INFO] report_generator: Report written: M:\cyber_intel\reports\2026-06-14_Upcoming_Speaking_Engagements.md
+2026-06-15 08:56:19,990 [INFO] report_generator: Report written: M:\cyber_intel\reports\2026-06-14_FBI_disrupts_massive_AI-powered_phishing_service_u.md
+2026-06-15 08:56:19,991 [INFO] report_generator: IOC CSV: M:\cyber_intel\reports\2026-06-15_iocs.csv (4 IOCs)

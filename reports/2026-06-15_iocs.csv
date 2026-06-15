@@ -1,0 +1,5 @@
+value,type,confidence,context,source,url
+outsiderenterprise.com,Domain,High,Phishing service domain,BleepingComputer,https://www.bleepingcomputer.com/news/security/fbi-disrupts-massive-ai-powered-phishing-service-using-a-million-urls/
+usdt,URL,High,Seized cryptocurrency from payment wallets,BleepingComputer,https://www.bleepingcomputer.com/news/security/fbi-disrupts-massive-ai-powered-phishing-service-using-a-million-urls/
+Telegram bot,URL,High,Linked to phishing service infrastructure,BleepingComputer,https://www.bleepingcomputer.com/news/security/fbi-disrupts-massive-ai-powered-phishing-service-using-a-million-urls/
+Android users,URL,High,Targeted by phishing campaigns,BleepingComputer,https://www.bleepingcomputer.com/news/security/fbi-disrupts-massive-ai-powered-phishing-service-using-a-million-urls/
