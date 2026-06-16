@@ -402,3 +402,25 @@
 2026-06-16 05:37:26,994 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_OptinMonster_WordPress_plugin_hacked_in_CDN_supply.md
 2026-06-16 05:37:26,995 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_Cisco_fixes_SD-WAN_vManage_flaw_exploited_in_zero-.md
 2026-06-16 05:37:26,997 [INFO] report_generator: IOC CSV: C:\Users\threa\cyber_helper\reports\2026-06-16_iocs.csv (33 IOCs)
+2026-06-16 06:35:40,730 [INFO] attack_mapper: Loaded 858 ATT&CK techniques
+2026-06-16 06:35:40,952 [INFO] rss_ingestor: Fetching feed: The Hacker News
+2026-06-16 06:35:41,707 [INFO] rss_ingestor: Fetching feed: BleepingComputer
+2026-06-16 06:35:43,235 [INFO] rss_ingestor: Fetching feed: The Record
+2026-06-16 06:35:44,000 [INFO] rss_ingestor: Fetching feed: Krebs on Security
+2026-06-16 06:35:44,446 [INFO] rss_ingestor: Fetching feed: Dark Reading
+2026-06-16 06:35:46,448 [INFO] rss_ingestor: Fetching feed: Schneier on Security
+2026-06-16 06:35:47,550 [INFO] rss_ingestor: Fetching feed: CyberScoop
+2026-06-16 06:35:48,101 [INFO] rss_ingestor: Fetching feed: SecurityWeek
+2026-06-16 06:35:49,550 [INFO] rss_ingestor: Total articles collected: 32
+2026-06-16 06:35:49,552 [INFO] scraper: Extracting: https://cyberscoop.com/google-unc6508-china-espionage-threat/
+2026-06-16 06:35:49,925 [INFO] scraper: Extraction complete: 1/1 articles succeeded
+2026-06-16 06:35:49,945 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
+2026-06-16 06:35:49,945 [INFO] llm_analyzer: [1/1] Google exposes China espionage group that’s been lurking in 
+2026-06-16 06:35:49,945 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Google exposes China espionage group that’s been lurking in networks u
+2026-06-16 06:39:50,220 [INFO] attack_mapper:   The threat group exploited externally facing REDCap ser -> T1668, T1108, T1525
+2026-06-16 06:39:52,333 [INFO] attack_mapper:   The threat group used a custom backdoor to steal admini -> T1212, T1589.001, T1003
+2026-06-16 06:39:54,447 [INFO] attack_mapper:   The threat group abused domain compliance rules to stea -> T1583.001, T1069.002, T1590.001
+2026-06-16 06:39:56,562 [INFO] attack_mapper:   The threat group exfiltrated data using a Gmail account -> T1586.002, T1585.002, T1087
+2026-06-16 06:39:56,563 [INFO] attack_mapper: ATT&CK mapping: 4 behaviors -> 12 techniques
+2026-06-16 06:39:56,772 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_Google_exposes_China_espionage_group_that_s_been_l.md
+2026-06-16 06:39:56,774 [INFO] report_generator: IOC CSV: C:\Users\threa\cyber_helper\reports\2026-06-16_iocs.csv (2 IOCs)

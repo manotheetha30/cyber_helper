@@ -117,7 +117,7 @@ def _build_query(
             )
         )
 
-    return " | ".join(parts)
+    return " | ".join(parts),behavior.category
 
 
 # ------------------------------------------------------------------
@@ -129,7 +129,7 @@ def map_behavior(
     top_k: int = RAG_TOP_K,
 ) -> list[ATTACKMapping]:
 
-    query = _build_query(
+    query,tactic_val = _build_query(
         behavior
     )
 
@@ -173,8 +173,7 @@ def map_behavior(
         technique = TECHNIQUES[idx]
 
         mappings.append(
-            ATTACKMapping(
-                tactic="Unknown",
+            ATTACKMapping(tactic=tactic_val,
                 technique_id=technique[
                     "attack_id"
                 ],

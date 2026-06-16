@@ -1,34 +1,3 @@
 value,type,confidence,context,source,url
-CFAKE.com,Domain,High,Domain seized under the TAKE IT DOWN Act,BleepingComputer,https://www.bleepingcomputer.com/news/security/doj-seizes-cfake-socfake-deepfake-nude-sites-under-take-it-down-act/
-SOCFAKE.com,Domain,High,Domain seized under the TAKE IT DOWN Act,BleepingComputer,https://www.bleepingcomputer.com/news/security/doj-seizes-cfake-socfake-deepfake-nude-sites-under-take-it-down-act/
-REDCap,Domain,High,The threat group exploited externally facing REDCap servers.,CyberScoop,https://cyberscoop.com/google-unc6508-china-espionage-threat/
-INFINITERED,URL,High,Custom backdoor deployed by UNC6508.,CyberScoop,https://cyberscoop.com/google-unc6508-china-espionage-threat/
-CVE-2026-48558,CVE,High,Vulnerability in SimpleHelp remote management software,BleepingComputer,https://www.bleepingcomputer.com/news/security/simplehelp-bug-lets-hackers-create-rogue-remote-support-accounts/
-5.5.15,URL,High,Vulnerable SimpleHelp version,BleepingComputer,https://www.bleepingcomputer.com/news/security/simplehelp-bug-lets-hackers-create-rogue-remote-support-accounts/
-6.0 pre-release,URL,High,Vulnerable SimpleHelp version,BleepingComputer,https://www.bleepingcomputer.com/news/security/simplehelp-bug-lets-hackers-create-rogue-remote-support-accounts/
-https://shodan.io/search?query=SimpleHelp,URL,Medium,Shodan search query for exposed SimpleHelp servers,BleepingComputer,https://www.bleepingcomputer.com/news/security/simplehelp-bug-lets-hackers-create-rogue-remote-support-accounts/
-/opt/SimpleHelp/logs/server.log,Filename,High,Log file containing technician registrations and configuration changes,BleepingComputer,https://www.bleepingcomputer.com/news/security/simplehelp-bug-lets-hackers-create-rogue-remote-support-accounts/
-/opt/SimpleHelp/logs/<YYYYMMDD-HHMMSS>/server.log,Filename,High,Log file containing technician registrations and configuration changes,BleepingComputer,https://www.bleepingcomputer.com/news/security/simplehelp-bug-lets-hackers-create-rogue-remote-support-accounts/
-REDCap,Filename,High,The compromised platform used by the attackers to gain initial access.,The Hacker News,https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html
-INFINITERED,Filename,High,The custom malware deployed by UNC6508.,The Hacker News,https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html
-Patroit,Email,High,The misspelled rule name used in Google Workspace to exfiltrate data.,The Hacker News,https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html
-chikungunya,URL,High,A specific keyword used in the exfiltration rule.,The Hacker News,https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html
-vrchat.com,Domain,Medium,Fake breach notice submitted under fake VRChat letterhead,The Record,https://therecord.media/maine-turns-off-breach-portal-fake-reports
-discord.com,Domain,Medium,Fake breach notice submitted under fake Discord letterhead,The Record,https://therecord.media/maine-turns-off-breach-portal-fake-reports
-a.omappapi.com,Domain,High,OptinMonster,BleepingComputer,https://www.bleepingcomputer.com/news/security/optinmonster-wordpress-plugin-hacked-in-cdn-supply-chain-attack/
-a.opmnstr.com,Domain,High,OptinMonster,BleepingComputer,https://www.bleepingcomputer.com/news/security/optinmonster-wordpress-plugin-hacked-in-cdn-supply-chain-attack/
-a.optnmstr.com,Domain,High,OptinMonster,BleepingComputer,https://www.bleepingcomputer.com/news/security/optinmonster-wordpress-plugin-hacked-in-cdn-supply-chain-attack/
-a.trstplse.com,Domain,High,TrustPulse,BleepingComputer,https://www.bleepingcomputer.com/news/security/optinmonster-wordpress-plugin-hacked-in-cdn-supply-chain-attack/
-"content-delivery-helper, v2.7.1",Filename,High,Malicious plugin disguise,BleepingComputer,https://www.bleepingcomputer.com/news/security/optinmonster-wordpress-plugin-hacked-in-cdn-supply-chain-attack/
-"database-optimizer, v2.9.4",Filename,High,Malicious plugin disguise,BleepingComputer,https://www.bleepingcomputer.com/news/security/optinmonster-wordpress-plugin-hacked-in-cdn-supply-chain-attack/
-api.min.js,Filename,High,Malicious JavaScript file,BleepingComputer,https://www.bleepingcomputer.com/news/security/optinmonster-wordpress-plugin-hacked-in-cdn-supply-chain-attack/
-CVE,CVE,Medium,Exploited known flaw in UpdraftPlus,BleepingComputer,https://www.bleepingcomputer.com/news/security/optinmonster-wordpress-plugin-hacked-in-cdn-supply-chain-attack/
-vmanage-server,Filename,High,logs to check for attempts to upload index.jsp and .war files,BleepingComputer,https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/
-vmanage-appserver,Filename,High,logs to check for attempts to upload index.jsp and .war files,BleepingComputer,https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/
-serviceproxy-access,Filename,High,logs to check for attempts to upload index.jsp and .war files,BleepingComputer,https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/
-CVE-2026-20262,CVE,High,vulnerability exploited in zero-day attacks,BleepingComputer,https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/
-CVE-2026-20133,CVE,High,information disclosure flaw patched in February,BleepingComputer,https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/
-CVE-2026-20128,CVE,High,flaw abused in the wild,BleepingComputer,https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/
-CVE-2026-20122,CVE,High,flaw abused in the wild,BleepingComputer,https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/
-CVE-2026-20182,CVE,High,authentication-bypass flaw exploited as zero-day,BleepingComputer,https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/
-CVE-2026-20245,CVE,High,zero-day exploited in attacks to gain root privileges,BleepingComputer,https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-exploited-in-zero-day-attacks/
+REDCap,Domain,High,The threat group exploited externally facing REDCap servers to deploy the INFINITERED backdoor.,CyberScoop,https://cyberscoop.com/google-unc6508-china-espionage-threat/
+Gmail account,Email,High,"The threat group used a Gmail account to exfiltrate data, which was disabled by Google.",CyberScoop,https://cyberscoop.com/google-unc6508-china-espionage-threat/
