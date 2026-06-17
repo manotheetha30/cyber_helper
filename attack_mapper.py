@@ -41,7 +41,7 @@ logger.info(
 
 _HIGH_SIMILARITY = 0.80
 _MEDIUM_SIMILARITY = 0.60
-_MIN_SIMILARITY = 0.35
+_MIN_SIMILARITY = 0
 
 
 # ------------------------------------------------------------------
@@ -157,9 +157,9 @@ def map_behavior(
 
         return []
 
-    mappings: list[
-        ATTACKMapping
-    ] = []
+    # Find the best match only
+    best_mapping = None
+    best_similarity = _MIN_SIMILARITY
 
     for idx in top_indices:
 
@@ -167,28 +167,27 @@ def map_behavior(
             scores[idx]
         )
 
-        if similarity < _MIN_SIMILARITY:
+        if similarity < best_similarity:
             continue
 
         technique = TECHNIQUES[idx]
 
-        mappings.append(
-            ATTACKMapping(tactic=tactic_val,
-                technique_id=technique[
-                    "attack_id"
-                ],
-                technique_name=technique[
-                    "name"
-                ],
-                observed_behavior=behavior.behavior,
-                confidence=_score_to_confidence(
-                    similarity
-                ),
-                similarity_score=round(
-                    similarity,
-                    4,
-                ),
-            )
+        best_mapping = ATTACKMapping(
+            tactic=tactic_val,
+            technique_id=technique[
+                "attack_id"
+            ],
+            technique_name=technique[
+                "name"
+            ],
+            observed_behavior=behavior.behavior,
+            confidence=_score_to_confidence(
+                similarity
+            ),
+            similarity_score=round(
+                similarity,
+                4,
+            ),
         )
 
         logger.debug(
@@ -198,28 +197,12 @@ def map_behavior(
             similarity,
         )
 
-    # Deduplicate
-    dedup = {}
+        # Return only the best match
+        break
 
-    for mapping in mappings:
-
-        if (
-            mapping.technique_id
-            not in dedup
-            or
-            mapping.similarity_score
-            >
-            dedup[
-                mapping.technique_id
-            ].similarity_score
-        ):
-            dedup[
-                mapping.technique_id
-            ] = mapping
-
-    return list(
-        dedup.values()
-    )
+    return [
+        best_mapping
+    ] if best_mapping else []
 
 
 # ------------------------------------------------------------------
@@ -306,5 +289,3 @@ def map_reports(
         map_report(r)
         for r in reports
     ]
-
-

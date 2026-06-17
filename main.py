@@ -163,13 +163,6 @@ def print_summary(stats: dict) -> None:
     console.print(tbl)
 
 
-def init_rag() -> None:
-    console.print("[cyan]Initialising ATT&CK RAG knowledge base...")
-    from attack_rag import ingest_attack_stix
-    ingest_attack_stix(force_reload=False)
-    console.print("[green]RAG ready.")
-
-
 def scheduled_run() -> None:
     import schedule as sched
     from settings import RUN_HOUR, RUN_MINUTE
@@ -197,10 +190,6 @@ def main() -> None:
     setup_logging(args.verbose)
     Path("data").mkdir(exist_ok=True)
     Path("reports").mkdir(exist_ok=True)
-
-    if args.init_rag:
-        init_rag()
-        return
     if args.schedule:
         scheduled_run()
         return

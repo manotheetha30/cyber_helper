@@ -1,0 +1,2 @@
+value,type,confidence,context,source,url
+Phantom Stealer,Malware Name,High,Malware used in phishing campaigns to steal credentials and data.,Dark Reading,https://www.darkreading.com/cyberattacks-data-breaches/fileless-phantom-stealer-targets-browser-credentials

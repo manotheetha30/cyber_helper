@@ -1,426 +1,47 @@
-2026-06-15 08:31:17,921 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/agent-harnesses "HTTP/1.1 200 OK"
-2026-06-15 08:31:18,230 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:18,261 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
-2026-06-15 08:31:18,514 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:18,528 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
-2026-06-15 08:31:18,533 [INFO] sentence_transformers.base.model: Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
-2026-06-15 08:31:18,764 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:18,776 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
-2026-06-15 08:31:19,011 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:19,013 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-2026-06-15 08:31:19,025 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
-2026-06-15 08:31:19,255 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:19,268 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
-2026-06-15 08:31:19,562 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:19,578 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
-2026-06-15 08:31:19,866 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
-2026-06-15 08:31:20,174 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:20,186 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
-2026-06-15 08:31:20,993 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
-2026-06-15 08:31:21,300 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
-2026-06-15 08:31:21,609 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
-2026-06-15 08:31:21,915 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
-2026-06-15 08:31:22,222 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:22,236 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-06-15 08:31:22,533 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:22,548 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
-2026-06-15 08:31:22,837 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:22,849 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
-2026-06-15 08:31:23,144 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:23,159 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-06-15 08:31:23,451 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
-2026-06-15 08:31:23,757 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
-2026-06-15 08:31:24,269 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:31:24,286 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
-2026-06-15 08:31:24,577 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
-2026-06-15 08:31:25,070 [INFO] attack_rag: Downloading ATT&CK STIX from GitHub...
-2026-06-15 08:31:26,977 [INFO] attack_rag: Cached STIX at M:\cyber_intel\data\chromadb\attack_stix.json
-2026-06-15 08:31:27,923 [INFO] attack_rag: Parsed 697 techniques from STIX
-2026-06-15 08:32:22,739 [INFO] attack_rag: Ingestion complete — 697 techniques indexed.
-2026-06-15 08:36:02,798 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-15 08:36:05,770 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-15 08:36:07,032 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-15 08:36:08,586 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-15 08:36:09,952 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-15 08:36:13,032 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-15 08:36:13,866 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-15 08:36:14,332 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-15 08:36:16,549 [INFO] rss_ingestor: Total articles collected: 2
-2026-06-15 08:36:16,551 [INFO] scraper: Extracting: https://www.schneier.com/blog/archives/2026/06/upcoming-speaking-engagements-57.
-2026-06-15 08:36:17,012 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/fbi-disrupts-massive-ai-powered-p
-2026-06-15 08:36:18,620 [INFO] scraper: Extraction complete: 2/2 articles succeeded
-2026-06-15 08:36:18,694 [INFO] database: Database ready: sqlite:///M:\cyber_intel/data/cti.db
-2026-06-15 08:36:18,714 [INFO] llm_analyzer: [1/2] Upcoming Speaking Engagements
-2026-06-15 08:36:18,715 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Upcoming Speaking Engagements
-2026-06-15 08:39:39,694 [INFO] llm_analyzer: [2/2] FBI disrupts massive AI-powered phishing service using a mil
-2026-06-15 08:39:39,695 [INFO] llm_analyzer: Analyzing [qwen3:8b]: FBI disrupts massive AI-powered phishing service using a million URLs
-2026-06-15 08:49:48,822 [ERROR] llm_analyzer: LLM failed for 'FBI disrupts massive AI-powered phishing service using a mil': RetryError[<Future at 0x1e567243fb0 state=finished raised ReadTimeout>]
-2026-06-15 08:49:48,876 [INFO] report_generator: Report written: M:\cyber_intel\reports\2026-06-14_Upcoming_Speaking_Engagements.md
-2026-06-15 08:49:48,880 [INFO] report_generator: Report written: M:\cyber_intel\reports\2026-06-14_FBI_disrupts_massive_AI-powered_phishing_service_u.md
-2026-06-15 08:49:48,886 [INFO] report_generator: IOC CSV: M:\cyber_intel\reports\2026-06-15_iocs.csv (0 IOCs)
-2026-06-15 08:52:00,493 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-15 08:52:03,120 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-15 08:52:05,072 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-15 08:52:07,153 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-15 08:52:08,473 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-15 08:52:11,028 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-15 08:52:12,380 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-15 08:52:13,536 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-15 08:52:18,137 [INFO] rss_ingestor: Total articles collected: 2
-2026-06-15 08:52:18,143 [INFO] scraper: Extracting: https://www.schneier.com/blog/archives/2026/06/upcoming-speaking-engagements-57.
-2026-06-15 08:52:19,356 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/fbi-disrupts-massive-ai-powered-p
-2026-06-15 08:52:21,698 [INFO] scraper: Extraction complete: 2/2 articles succeeded
-2026-06-15 08:52:21,752 [INFO] database: Database ready: sqlite:///M:\cyber_intel/data/cti.db
-2026-06-15 08:52:21,780 [INFO] llm_analyzer: [1/2] Upcoming Speaking Engagements
-2026-06-15 08:52:21,780 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Upcoming Speaking Engagements
-2026-06-15 08:52:44,170 [INFO] llm_analyzer: [2/2] FBI disrupts massive AI-powered phishing service using a mil
-2026-06-15 08:52:44,170 [INFO] llm_analyzer: Analyzing [qwen3:8b]: FBI disrupts massive AI-powered phishing service using a million URLs
-2026-06-15 08:56:12,665 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:12,676 [WARNING] huggingface_hub.utils._http: Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
-2026-06-15 08:56:12,697 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
-2026-06-15 08:56:12,974 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:12,986 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
-2026-06-15 08:56:12,991 [INFO] sentence_transformers.base.model: Loading SentenceTransformer model from sentence-transformers/all-MiniLM-L6-v2.
-2026-06-15 08:56:13,279 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config_sentence_transformers.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:13,291 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config_sentence_transformers.json "HTTP/1.1 200 OK"
-2026-06-15 08:56:13,587 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/README.md "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:13,599 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/README.md "HTTP/1.1 200 OK"
-2026-06-15 08:56:13,896 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/modules.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:13,910 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/modules.json "HTTP/1.1 200 OK"
-2026-06-15 08:56:14,203 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/sentence_bert_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:14,220 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/sentence_bert_config.json "HTTP/1.1 200 OK"
-2026-06-15 08:56:14,509 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/adapter_config.json "HTTP/1.1 404 Not Found"
-2026-06-15 08:56:14,816 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:14,826 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
-2026-06-15 08:56:15,430 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/processor_config.json "HTTP/1.1 404 Not Found"
-2026-06-15 08:56:15,737 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
-2026-06-15 08:56:16,045 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/video_preprocessor_config.json "HTTP/1.1 404 Not Found"
-2026-06-15 08:56:16,353 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/preprocessor_config.json "HTTP/1.1 404 Not Found"
-2026-06-15 08:56:16,659 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:16,672 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-06-15 08:56:16,969 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:16,983 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
-2026-06-15 08:56:17,273 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:17,286 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/config.json "HTTP/1.1 200 OK"
-2026-06-15 08:56:17,580 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/tokenizer_config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:17,596 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/tokenizer_config.json "HTTP/1.1 200 OK"
-2026-06-15 08:56:17,888 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main/additional_chat_templates?recursive=false&expand=false "HTTP/1.1 404 Not Found"
-2026-06-15 08:56:18,196 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2/tree/main?recursive=true&expand=false "HTTP/1.1 200 OK"
-2026-06-15 08:56:18,617 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2/resolve/main/1_Pooling/config.json "HTTP/1.1 307 Temporary Redirect"
-2026-06-15 08:56:18,629 [INFO] httpx: HTTP Request: HEAD https://huggingface.co/api/resolve-cache/models/sentence-transformers/all-MiniLM-L6-v2/1110a243fdf4706b3f48f1d95db1a4f5529b4d41/1_Pooling%2Fconfig.json "HTTP/1.1 200 OK"
-2026-06-15 08:56:18,913 [INFO] httpx: HTTP Request: GET https://huggingface.co/api/models/sentence-transformers/all-MiniLM-L6-v2 "HTTP/1.1 200 OK"
-2026-06-15 08:56:19,953 [INFO] hunt_generator: Hunt generation: 8 hypotheses (5 huntable) for 'FBI disrupts massive AI-powered phishing service u'
-2026-06-15 08:56:19,987 [INFO] report_generator: Report written: M:\cyber_intel\reports\2026-06-14_Upcoming_Speaking_Engagements.md
-2026-06-15 08:56:19,990 [INFO] report_generator: Report written: M:\cyber_intel\reports\2026-06-14_FBI_disrupts_massive_AI-powered_phishing_service_u.md
-2026-06-15 08:56:19,991 [INFO] report_generator: IOC CSV: M:\cyber_intel\reports\2026-06-15_iocs.csv (4 IOCs)
-2026-06-15 23:29:45,567 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-15 23:29:47,173 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-15 23:29:48,915 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-15 23:29:50,542 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-15 23:29:51,572 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-15 23:29:54,179 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-15 23:29:55,550 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-15 23:29:56,795 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-15 23:30:00,591 [INFO] rss_ingestor: Total articles collected: 42
-2026-06-15 23:30:00,645 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/doj-seizes-cfake-socfake-deepfake
-2026-06-15 23:30:02,609 [INFO] scraper: Extracting: https://cyberscoop.com/google-unc6508-china-espionage-threat/
-2026-06-15 23:30:02,984 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/simplehelp-bug-lets-hackers-creat
-2026-06-15 23:30:04,782 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html
-2026-06-15 23:30:05,918 [INFO] scraper: Extracting: https://www.darkreading.com/application-security/copilot-searchleak-attack-1-cli
-2026-06-15 23:30:11,011 [WARNING] scraper: HTTP fetch failed for https://www.darkreading.com/application-security/copilot-searchleak-attack-1-click-data-theft: RetryError[<Future at 0x19d2d5117f0 state=finished raised HTTPError>]
-2026-06-15 23:30:11,013 [INFO] scraper: Extracting: https://therecord.media/maine-turns-off-breach-portal-fake-reports
-2026-06-15 23:30:12,068 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/optinmonster-wordpress-plugin-hac
-2026-06-15 23:30:13,288 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-e
-2026-06-15 23:30:15,222 [INFO] scraper: Extracting: https://www.darkreading.com/threat-intelligence/china-nexus-actor-us-researchers
-2026-06-15 23:30:20,254 [WARNING] scraper: HTTP fetch failed for https://www.darkreading.com/threat-intelligence/china-nexus-actor-us-researchers-undetected: RetryError[<Future at 0x19d2d951bb0 state=finished raised HTTPError>]
-2026-06-15 23:30:20,254 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html
-2026-06-15 23:30:21,149 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/council-of-europe-investigates-sh
-2026-06-15 23:30:23,016 [INFO] scraper: Extracting: https://www.securityweek.com/ransomware-attack-shuts-down-mills-of-australias-se
-2026-06-15 23:30:23,912 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/one-click-microsoft-365-copilot-flaw.html
-2026-06-15 23:30:24,937 [INFO] scraper: Extracting: https://www.darkreading.com/cyberattacks-data-breaches/beginning-end-social-engi
-2026-06-15 23:30:29,957 [WARNING] scraper: HTTP fetch failed for https://www.darkreading.com/cyberattacks-data-breaches/beginning-end-social-engineering: RetryError[<Future at 0x19d2d5117f0 state=finished raised HTTPError>]
-2026-06-15 23:30:29,957 [INFO] scraper: Extracting: https://therecord.media/cyberattack-on-russian-tech-firm-astral-disrupts-busines
-2026-06-15 23:30:30,809 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/chinese-hackers-breach-redcap-ser
-2026-06-15 23:30:33,051 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/weekly-recap-chrome-0-day-unifi.html
-2026-06-15 23:30:34,113 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/new-attack-turned-microsoft-365-c
-2026-06-15 23:30:36,332 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/infinite-campus-data-breach-affec
-2026-06-15 23:30:38,366 [INFO] scraper: Extracting: https://therecord.media/anthropic-says-gov-forced-it-to-disable-cyber-ai-models
-2026-06-15 23:30:39,302 [INFO] scraper: Extracting: https://www.securityweek.com/ukrainian-man-pleads-guilty-in-us-to-conti-ransomwa
-2026-06-15 23:30:40,260 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/the-onboarding-password-mistake-that.html
-2026-06-15 23:30:41,111 [INFO] scraper: Extracting: https://www.securityweek.com/ozempic-maker-novo-nordisk-says-hackers-breached-it
-2026-06-15 23:30:42,518 [INFO] scraper: Extracting: https://www.securityweek.com/french-government-messaging-platform-breached-by-my
-2026-06-15 23:30:43,437 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/popular-wordpress-plugin-scripts.html
-2026-06-15 23:30:44,282 [INFO] scraper: Extracting: https://www.securityweek.com/maine-disables-data-breach-portal-due-to-fake-submi
-2026-06-15 23:30:45,190 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/palo-alto-warns-of-active-exploitation.html
-2026-06-15 23:30:46,104 [INFO] scraper: Extraction complete: 24/27 articles succeeded
-2026-06-15 23:30:46,353 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
-2026-06-15 23:30:46,504 [INFO] llm_analyzer: [1/24] DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT 
-2026-06-15 23:30:46,504 [INFO] llm_analyzer: Analyzing [qwen3:8b]: DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT DOWN Act
-2026-06-15 23:34:09,187 [INFO] llm_analyzer: [2/24] Google exposes China espionage group that’s been lurking in 
-2026-06-15 23:34:09,187 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Google exposes China espionage group that’s been lurking in networks u
-2026-06-15 23:38:16,418 [INFO] llm_analyzer: [3/24] SimpleHelp bug lets hackers create rogue remote support acco
-2026-06-15 23:38:16,420 [INFO] llm_analyzer: Analyzing [qwen3:8b]: SimpleHelp bug lets hackers create rogue remote support accounts
-2026-06-15 23:43:10,140 [INFO] llm_analyzer: [4/24] Chinese Hackers Abused Google Workspace Rules to Steal Resea
-2026-06-15 23:43:10,140 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Chinese Hackers Abused Google Workspace Rules to Steal Research and De
-2026-06-16 00:37:42,133 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-16 00:37:44,387 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-16 00:37:44,783 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-16 00:37:45,359 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-16 00:37:45,807 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-16 00:37:47,327 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-16 00:37:47,717 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-16 00:37:48,117 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-16 00:37:49,573 [INFO] rss_ingestor: Total articles collected: 42
-2026-06-16 00:37:49,574 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/doj-seizes-cfake-socfake-deepfake
-2026-06-16 00:37:51,424 [INFO] scraper: Extracting: https://cyberscoop.com/google-unc6508-china-espionage-threat/
-2026-06-16 00:37:51,825 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/simplehelp-bug-lets-hackers-creat
-2026-06-16 00:37:53,766 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html
-2026-06-16 00:37:54,836 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/north-korean-hackers-are-turning.html
-2026-06-16 00:37:55,886 [INFO] scraper: Extracting: https://www.darkreading.com/application-security/copilot-searchleak-attack-1-cli
-2026-06-16 00:38:01,251 [WARNING] scraper: HTTP fetch failed for https://www.darkreading.com/application-security/copilot-searchleak-attack-1-click-data-theft: RetryError[<Future at 0x175e79b7350 state=finished raised HTTPError>]
-2026-06-16 00:38:01,251 [INFO] scraper: Extracting: https://therecord.media/maine-turns-off-breach-portal-fake-reports
-2026-06-16 00:38:02,254 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/optinmonster-wordpress-plugin-hac
-2026-06-16 00:38:04,225 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-e
-2026-06-16 00:38:05,892 [INFO] scraper: Extracting: https://www.darkreading.com/threat-intelligence/china-nexus-actor-us-researchers
-2026-06-16 00:38:10,970 [WARNING] scraper: HTTP fetch failed for https://www.darkreading.com/threat-intelligence/china-nexus-actor-us-researchers-undetected: RetryError[<Future at 0x175e5a967b0 state=finished raised HTTPError>]
-2026-06-16 00:38:10,970 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/litellm-vulnerability-chain-lets-low.html
-2026-06-16 00:38:11,949 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/council-of-europe-investigates-sh
-2026-06-16 00:38:13,675 [INFO] scraper: Extracting: https://cyberscoop.com/cybersecurity-experts-anthropic-fable-5-not-unique-ai-thr
-2026-06-16 00:38:14,133 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/fbi-fraudsters-use-couriers-to-st
-2026-06-16 00:38:15,951 [INFO] scraper: Extracting: https://www.securityweek.com/ransomware-attack-shuts-down-mills-of-australias-se
-2026-06-16 00:38:16,929 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/one-click-microsoft-365-copilot-flaw.html
-2026-06-16 00:38:17,873 [INFO] scraper: Extracting: https://therecord.media/cyberattack-on-russian-tech-firm-astral-disrupts-busines
-2026-06-16 00:38:18,768 [INFO] scraper: Extracting: https://www.securityweek.com/chinese-hackers-target-medical-military-and-ai-rese
-2026-06-16 00:38:19,845 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/chinese-hackers-breach-redcap-ser
-2026-06-16 00:38:21,752 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/new-attack-turned-microsoft-365-c
-2026-06-16 00:38:23,634 [INFO] scraper: Extracting: https://www.securityweek.com/newcore-emerges-from-stealth-mode-with-66-million-i
-2026-06-16 00:38:24,673 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/infinite-campus-data-breach-affec
-2026-06-16 00:38:26,787 [INFO] scraper: Extracting: https://therecord.media/anthropic-says-gov-forced-it-to-disable-cyber-ai-models
-2026-06-16 00:38:27,737 [INFO] scraper: Extracting: https://www.darkreading.com/cyber-risk/us-cracks-down-anthropic-ai-models-abuse-
-2026-06-16 00:38:32,903 [WARNING] scraper: HTTP fetch failed for https://www.darkreading.com/cyber-risk/us-cracks-down-anthropic-ai-models-abuse-concerns: RetryError[<Future at 0x175e7988b30 state=finished raised HTTPError>]
-2026-06-16 00:38:32,904 [INFO] scraper: Extracting: https://www.securityweek.com/ukrainian-man-pleads-guilty-in-us-to-conti-ransomwa
-2026-06-16 00:38:34,186 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/the-onboarding-password-mistake-that.html
-2026-06-16 00:38:35,030 [INFO] scraper: Extracting: https://www.securityweek.com/ozempic-maker-novo-nordisk-says-hackers-breached-it
-2026-06-16 00:38:35,870 [INFO] scraper: Extracting: https://www.securityweek.com/french-government-messaging-platform-breached-by-my
-2026-06-16 00:38:37,161 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/152-chrome-wallpaper-extensions-with.html
-2026-06-16 00:38:38,251 [INFO] scraper: Extracting: https://www.securityweek.com/shinyhunters-claims-council-of-europe-hack/
-2026-06-16 00:38:39,082 [INFO] scraper: Extracting: https://www.securityweek.com/fbi-google-dismantle-outsider-enterprise-phishing-s
-2026-06-16 00:38:39,957 [INFO] scraper: Extracting: https://www.securityweek.com/maine-disables-data-breach-portal-due-to-fake-submi
-2026-06-16 00:38:40,787 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/sniper-dz-scams-target-mena-users-via.html
-2026-06-16 00:38:41,618 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/palo-alto-warns-of-active-exploitation.html
-2026-06-16 00:38:42,435 [INFO] scraper: Extraction complete: 31/34 articles succeeded
-2026-06-16 00:38:42,472 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
-2026-06-16 00:38:42,552 [INFO] llm_analyzer: [1/31] DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT 
-2026-06-16 00:38:42,552 [INFO] llm_analyzer: Analyzing [qwen3:8b]: DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT DOWN Act
-2026-06-16 00:41:37,670 [INFO] llm_analyzer: [2/31] Google exposes China espionage group that’s been lurking in 
-2026-06-16 00:41:37,670 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Google exposes China espionage group that’s been lurking in networks u
-2026-06-16 00:45:35,909 [INFO] llm_analyzer: [3/31] SimpleHelp bug lets hackers create rogue remote support acco
-2026-06-16 00:45:35,909 [INFO] llm_analyzer: Analyzing [qwen3:8b]: SimpleHelp bug lets hackers create rogue remote support accounts
-2026-06-16 00:49:12,877 [INFO] llm_analyzer: [4/31] Chinese Hackers Abused Google Workspace Rules to Steal Resea
-2026-06-16 00:49:12,878 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Chinese Hackers Abused Google Workspace Rules to Steal Research and De
-2026-06-16 00:54:02,404 [INFO] llm_analyzer: [5/31] North Korean Hackers Are Turning Developer Tools Into Malwar
-2026-06-16 00:54:02,404 [INFO] llm_analyzer: Analyzing [qwen3:8b]: North Korean Hackers Are Turning Developer Tools Into Malware Delivery
-2026-06-16 01:54:15,760 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-16 01:54:17,928 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-16 01:54:18,373 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-16 01:54:19,187 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-16 01:54:19,663 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-16 01:54:21,090 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-16 01:54:21,868 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-16 01:54:22,292 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-16 01:54:25,124 [INFO] rss_ingestor: Total articles collected: 42
-2026-06-16 01:54:25,126 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/doj-seizes-cfake-socfake-deepfake
-2026-06-16 01:54:26,953 [INFO] scraper: Extracting: https://cyberscoop.com/google-unc6508-china-espionage-threat/
-2026-06-16 01:54:27,308 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/simplehelp-bug-lets-hackers-creat
-2026-06-16 01:54:29,067 [INFO] scraper: Extraction complete: 3/3 articles succeeded
-2026-06-16 01:54:29,101 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
-2026-06-16 01:54:29,106 [INFO] llm_analyzer: [1/3] DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT 
-2026-06-16 01:54:29,106 [INFO] llm_analyzer: Analyzing [qwen3:8b]: DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT DOWN Act
-2026-06-16 01:56:28,475 [INFO] llm_analyzer: [2/3] Google exposes China espionage group that’s been lurking in 
-2026-06-16 01:56:28,475 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Google exposes China espionage group that’s been lurking in networks u
-2026-06-16 01:59:20,051 [INFO] llm_analyzer: [3/3] SimpleHelp bug lets hackers create rogue remote support acco
-2026-06-16 01:59:20,052 [INFO] llm_analyzer: Analyzing [qwen3:8b]: SimpleHelp bug lets hackers create rogue remote support accounts
-2026-06-16 02:05:23,214 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-16 02:05:24,083 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-16 02:05:24,533 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-16 02:05:25,140 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-16 02:05:25,596 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-16 02:05:26,979 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-16 02:05:27,342 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-16 02:05:27,784 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-16 02:05:30,627 [INFO] rss_ingestor: Total articles collected: 42
-2026-06-16 02:05:30,628 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/doj-seizes-cfake-socfake-deepfake
-2026-06-16 02:05:32,467 [INFO] scraper: Extracting: https://cyberscoop.com/google-unc6508-china-espionage-threat/
-2026-06-16 02:05:32,817 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/simplehelp-bug-lets-hackers-creat
-2026-06-16 02:05:34,701 [INFO] scraper: Extraction complete: 3/3 articles succeeded
-2026-06-16 02:05:34,734 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
-2026-06-16 02:05:34,751 [INFO] llm_analyzer: [1/3] DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT 
-2026-06-16 02:05:34,751 [INFO] llm_analyzer: Analyzing [qwen3:8b]: DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT DOWN Act
-2026-06-16 02:07:25,637 [INFO] llm_analyzer: [2/3] Google exposes China espionage group that’s been lurking in 
-2026-06-16 02:07:25,637 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Google exposes China espionage group that’s been lurking in networks u
-2026-06-16 02:10:31,372 [INFO] llm_analyzer: [3/3] SimpleHelp bug lets hackers create rogue remote support acco
-2026-06-16 02:10:31,372 [INFO] llm_analyzer: Analyzing [qwen3:8b]: SimpleHelp bug lets hackers create rogue remote support accounts
-2026-06-16 02:20:36,328 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-16 02:20:37,192 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-16 02:20:38,615 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-16 02:20:39,213 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-16 02:20:39,685 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-16 02:20:40,626 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-16 02:20:41,018 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-16 02:20:41,462 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-16 02:20:44,699 [INFO] rss_ingestor: Total articles collected: 42
-2026-06-16 02:20:44,700 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/doj-seizes-cfake-socfake-deepfake
-2026-06-16 02:20:46,506 [INFO] scraper: Extraction complete: 1/1 articles succeeded
-2026-06-16 02:20:46,526 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
-2026-06-16 02:20:46,533 [INFO] llm_analyzer: [1/1] DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT 
-2026-06-16 02:20:46,533 [INFO] llm_analyzer: Analyzing [qwen3:8b]: DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT DOWN Act
-2026-06-16 02:31:51,707 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-16 02:31:52,508 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-16 02:31:52,963 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-16 02:31:53,613 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-16 02:31:54,049 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-16 02:31:55,328 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-16 02:31:55,692 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-16 02:31:56,174 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-16 02:31:57,660 [INFO] rss_ingestor: Total articles collected: 42
-2026-06-16 02:31:57,663 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/doj-seizes-cfake-socfake-deepfake
-2026-06-16 02:32:00,093 [INFO] scraper: Extraction complete: 1/1 articles succeeded
-2026-06-16 02:32:00,115 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
-2026-06-16 02:32:00,122 [INFO] llm_analyzer: [1/1] DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT 
-2026-06-16 02:32:00,122 [INFO] llm_analyzer: Analyzing [qwen3:8b]: DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT DOWN Act
-2026-06-16 02:38:51,884 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-16 02:38:52,932 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-16 02:38:53,382 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-16 02:38:53,994 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-16 02:38:54,576 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-16 02:38:56,041 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-16 02:38:56,416 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-16 02:38:56,938 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-16 02:38:58,437 [INFO] rss_ingestor: Total articles collected: 42
-2026-06-16 02:38:58,439 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/doj-seizes-cfake-socfake-deepfake
-2026-06-16 02:39:00,280 [INFO] scraper: Extraction complete: 1/1 articles succeeded
-2026-06-16 02:39:00,302 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
-2026-06-16 02:39:00,311 [INFO] llm_analyzer: [1/1] DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT 
-2026-06-16 02:39:00,311 [INFO] llm_analyzer: Analyzing [qwen3:8b]: DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT DOWN Act
-2026-06-16 03:34:58,570 [INFO] attack_mapper: Loaded 858 ATT&CK techniques
-2026-06-16 03:34:58,912 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-16 03:34:59,701 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-16 03:35:00,142 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-16 03:35:01,372 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-16 03:35:01,788 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-16 03:35:03,796 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-16 03:35:04,446 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-16 03:35:04,838 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-16 03:35:07,561 [INFO] rss_ingestor: Total articles collected: 40
-2026-06-16 03:35:07,562 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/doj-seizes-cfake-socfake-deepfake
-2026-06-16 03:35:09,404 [INFO] scraper: Extraction complete: 1/1 articles succeeded
-2026-06-16 03:35:09,418 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
-2026-06-16 03:35:09,423 [INFO] llm_analyzer: [1/1] DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT 
-2026-06-16 03:35:09,423 [INFO] llm_analyzer: Analyzing [qwen3:8b]: DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT DOWN Act
-2026-06-16 03:38:22,055 [INFO] attack_mapper:   Hosting nonconsensual AI-generated nude images and vide -> T1683, T1683.002, T1682
-2026-06-16 03:38:22,055 [INFO] attack_mapper: ATT&CK mapping: 1 behaviors -> 3 techniques
-2026-06-16 03:38:22,120 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_DOJ_seizes_CFAKE__SOCFAKE_deepfake_nude_sites_unde.md
-2026-06-16 03:38:22,126 [INFO] report_generator: IOC CSV: C:\Users\threa\cyber_helper\reports\2026-06-16_iocs.csv (2 IOCs)
-2026-06-16 03:40:00,144 [INFO] attack_mapper: Loaded 858 ATT&CK techniques
-2026-06-16 03:40:00,546 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-16 03:40:02,618 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-16 03:40:03,992 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-16 03:40:04,593 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-16 03:40:05,065 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-16 03:40:06,168 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-16 03:40:06,526 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-16 03:40:06,916 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-16 03:40:08,389 [INFO] rss_ingestor: Total articles collected: 40
-2026-06-16 03:40:08,390 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/doj-seizes-cfake-socfake-deepfake
-2026-06-16 03:40:10,178 [INFO] scraper: Extracting: https://cyberscoop.com/google-unc6508-china-espionage-threat/
-2026-06-16 03:40:10,561 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/simplehelp-bug-lets-hackers-creat
-2026-06-16 03:40:12,262 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/chinese-hackers-abused-google-workspace.html
-2026-06-16 03:40:13,178 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/north-korean-hackers-are-turning.html
-2026-06-16 03:40:14,012 [INFO] scraper: Extracting: https://www.darkreading.com/application-security/copilot-searchleak-attack-1-cli
-2026-06-16 03:40:18,904 [WARNING] scraper: HTTP fetch failed for https://www.darkreading.com/application-security/copilot-searchleak-attack-1-click-data-theft: RetryError[<Future at 0x1b9f5df3d70 state=finished raised HTTPError>]
-2026-06-16 03:40:18,905 [INFO] scraper: Extracting: https://therecord.media/maine-turns-off-breach-portal-fake-reports
-2026-06-16 03:40:20,378 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/optinmonster-wordpress-plugin-hac
-2026-06-16 03:40:22,162 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/cisco-fixes-sd-wan-vmanage-flaw-e
-2026-06-16 03:40:23,844 [INFO] scraper: Extracting: https://www.darkreading.com/threat-intelligence/china-nexus-actor-us-researchers
-2026-06-16 03:40:28,747 [WARNING] scraper: HTTP fetch failed for https://www.darkreading.com/threat-intelligence/china-nexus-actor-us-researchers-undetected: RetryError[<Future at 0x1b9f5a48230 state=finished raised HTTPError>]
-2026-06-16 03:40:28,747 [INFO] scraper: Extraction complete: 8/10 articles succeeded
-2026-06-16 03:40:28,777 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
-2026-06-16 03:40:28,794 [INFO] llm_analyzer: [1/8] DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT 
-2026-06-16 03:40:28,794 [INFO] llm_analyzer: Analyzing [qwen3:8b]: DOJ seizes CFAKE, SOCFAKE deepfake nude sites under TAKE IT DOWN Act
-2026-06-16 03:42:15,064 [INFO] llm_analyzer: [2/8] Google exposes China espionage group that’s been lurking in 
-2026-06-16 03:42:15,064 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Google exposes China espionage group that’s been lurking in networks u
-2026-06-16 03:46:24,531 [INFO] llm_analyzer: [3/8] SimpleHelp bug lets hackers create rogue remote support acco
-2026-06-16 03:46:24,531 [INFO] llm_analyzer: Analyzing [qwen3:8b]: SimpleHelp bug lets hackers create rogue remote support accounts
-2026-06-16 03:50:02,155 [INFO] llm_analyzer: [4/8] Chinese Hackers Abused Google Workspace Rules to Steal Resea
-2026-06-16 03:50:02,156 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Chinese Hackers Abused Google Workspace Rules to Steal Research and De
-2026-06-16 03:54:54,215 [INFO] llm_analyzer: [5/8] North Korean Hackers Are Turning Developer Tools Into Malwar
-2026-06-16 03:54:54,215 [INFO] llm_analyzer: Analyzing [qwen3:8b]: North Korean Hackers Are Turning Developer Tools Into Malware Delivery
-2026-06-16 04:11:43,303 [ERROR] llm_analyzer: LLM failed for 'North Korean Hackers Are Turning Developer Tools Into Malwar': RetryError[<Future at 0x1b9f5f8bc80 state=finished raised ReadTimeout>]
-2026-06-16 04:11:43,303 [INFO] llm_analyzer: [6/8] Maine closes data breach portal to the public after fake rep
-2026-06-16 04:11:43,303 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Maine closes data breach portal to the public after fake reports
-2026-06-16 04:13:45,733 [INFO] llm_analyzer: [7/8] OptinMonster WordPress plugin hacked in CDN supply-chain att
-2026-06-16 04:13:45,733 [INFO] llm_analyzer: Analyzing [qwen3:8b]: OptinMonster WordPress plugin hacked in CDN supply-chain attack
-2026-06-16 05:20:55,514 [INFO] llm_analyzer: [8/8] Cisco fixes SD-WAN vManage flaw exploited in zero-day attack
-2026-06-16 05:20:55,523 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Cisco fixes SD-WAN vManage flaw exploited in zero-day attacks
-2026-06-16 05:24:30,591 [INFO] attack_mapper:   Hosting nonconsensual AI-generated nude images and vide -> T1683, T1683.002, T1682
-2026-06-16 05:24:30,592 [INFO] attack_mapper: ATT&CK mapping: 1 behaviors -> 3 techniques
-2026-06-16 05:24:32,759 [INFO] attack_mapper:   Exploited externally facing REDCap servers to deploy th -> T1525, T1108, T1190
-2026-06-16 05:24:34,905 [INFO] attack_mapper:   Used a custom backdoor to steal administrative credenti -> T1212, T1110.004, T1003
-2026-06-16 05:24:37,075 [INFO] attack_mapper:   Abused domain compliance rules to steal data without re -> T1583.001, T1590.001, T1119
-2026-06-16 05:24:39,247 [INFO] attack_mapper:   Routed traffic through U.S.-based IPs to blend in with  -> T1011, T1567, T1048
-2026-06-16 05:24:41,396 [INFO] attack_mapper:   Used a Gmail account to exfiltrate data.                -> T1586.002, T1585.002, T1087
-2026-06-16 05:24:41,396 [INFO] attack_mapper: ATT&CK mapping: 5 behaviors -> 15 techniques
-2026-06-16 05:24:43,596 [INFO] attack_mapper:   Unauthenticated attackers create privileged technician  -> T1068, T1078, T1552
-2026-06-16 05:24:45,769 [INFO] attack_mapper:   Rogue technician accounts perform privileged management -> T1068, T1098, T1078.003
-2026-06-16 05:24:47,943 [INFO] attack_mapper:   New authenticated technician users with unknown or susp -> T1110.004, T1589.001, T1212
-2026-06-16 05:24:47,943 [INFO] attack_mapper: ATT&CK mapping: 3 behaviors -> 8 techniques
-2026-06-16 05:24:50,102 [INFO] attack_mapper:   The attackers compromised externally facing REDCap serv -> T1108, T1650, T1584.004
-2026-06-16 05:24:52,254 [INFO] attack_mapper:   The attackers deployed custom malware to hijack the RED -> T1070.009, T1037.004, T1546
-2026-06-16 05:24:54,461 [INFO] attack_mapper:   The attackers used Google Workspace content compliance  -> T1584.006, T1020, T1114.002
-2026-06-16 05:24:56,622 [INFO] attack_mapper:   The attackers harvested usernames and passwords from th -> T1110.004, T1078.003, T1212
-2026-06-16 05:24:58,768 [INFO] attack_mapper:   The attackers used stolen credentials to move into the  -> T1078, T1078.002, T1556.001
-2026-06-16 05:24:58,769 [INFO] attack_mapper: ATT&CK mapping: 5 behaviors -> 15 techniques
-2026-06-16 05:25:00,924 [INFO] attack_mapper:   Submitted fake breach notices to the Maine data breach  -> T1056.003, T1684.002, T1672
-2026-06-16 05:25:00,925 [INFO] attack_mapper: ATT&CK mapping: 1 behaviors -> 3 techniques
-2026-06-16 05:25:03,089 [INFO] attack_mapper:   Malicious scripts were served to unsuspecting users via -> T1190, T1596.004, T1204.005
-2026-06-16 05:37:11,172 [INFO] attack_mapper:   Attackers collected authentication tokens and nonces to -> T1212, T1589.001, T1078
-2026-06-16 05:37:13,293 [INFO] attack_mapper:   Attackers installed a self-hiding backdoor plugin and e -> T1102.003, T1480, T1102.002
-2026-06-16 05:37:15,477 [INFO] attack_mapper:   Attackers provided full remote access capabilities, inc -> T1068, T1108, T1051
-2026-06-16 05:37:17,647 [INFO] attack_mapper:   Attackers modified JavaScript files distributed via Awe -> T1027.006, T1596.004, T1176
-2026-06-16 05:37:19,845 [INFO] attack_mapper:   Attackers created rogue administrator accounts to maint -> T1070.009, T1207, T1078.001
-2026-06-16 05:37:19,846 [INFO] attack_mapper: ATT&CK mapping: 6 behaviors -> 17 techniques
-2026-06-16 05:37:22,002 [INFO] attack_mapper:   Remote attackers can upload or overwrite files on the s -> T1068, T1219, T1210
-2026-06-16 05:37:24,162 [INFO] attack_mapper:   Attackers can execute arbitrary commands as root        -> T1068, T1548, T1668
-2026-06-16 05:37:26,307 [INFO] attack_mapper:   Attackers can exploit the vulnerability to gain root pr -> T1068, T1548, T1668
-2026-06-16 05:37:26,308 [INFO] attack_mapper: ATT&CK mapping: 3 behaviors -> 5 techniques
-2026-06-16 05:37:26,970 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_DOJ_seizes_CFAKE__SOCFAKE_deepfake_nude_sites_unde.md
-2026-06-16 05:37:26,986 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_Google_exposes_China_espionage_group_that_s_been_l.md
-2026-06-16 05:37:26,986 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_SimpleHelp_bug_lets_hackers_create_rogue_remote_su.md
-2026-06-16 05:37:26,986 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_Chinese_Hackers_Abused_Google_Workspace_Rules_to_S.md
-2026-06-16 05:37:26,990 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_North_Korean_Hackers_Are_Turning_Developer_Tools_I.md
-2026-06-16 05:37:26,990 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_Maine_closes_data_breach_portal_to_the_public_afte.md
-2026-06-16 05:37:26,994 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_OptinMonster_WordPress_plugin_hacked_in_CDN_supply.md
-2026-06-16 05:37:26,995 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_Cisco_fixes_SD-WAN_vManage_flaw_exploited_in_zero-.md
-2026-06-16 05:37:26,997 [INFO] report_generator: IOC CSV: C:\Users\threa\cyber_helper\reports\2026-06-16_iocs.csv (33 IOCs)
-2026-06-16 06:35:40,730 [INFO] attack_mapper: Loaded 858 ATT&CK techniques
-2026-06-16 06:35:40,952 [INFO] rss_ingestor: Fetching feed: The Hacker News
-2026-06-16 06:35:41,707 [INFO] rss_ingestor: Fetching feed: BleepingComputer
-2026-06-16 06:35:43,235 [INFO] rss_ingestor: Fetching feed: The Record
-2026-06-16 06:35:44,000 [INFO] rss_ingestor: Fetching feed: Krebs on Security
-2026-06-16 06:35:44,446 [INFO] rss_ingestor: Fetching feed: Dark Reading
-2026-06-16 06:35:46,448 [INFO] rss_ingestor: Fetching feed: Schneier on Security
-2026-06-16 06:35:47,550 [INFO] rss_ingestor: Fetching feed: CyberScoop
-2026-06-16 06:35:48,101 [INFO] rss_ingestor: Fetching feed: SecurityWeek
-2026-06-16 06:35:49,550 [INFO] rss_ingestor: Total articles collected: 32
-2026-06-16 06:35:49,552 [INFO] scraper: Extracting: https://cyberscoop.com/google-unc6508-china-espionage-threat/
-2026-06-16 06:35:49,925 [INFO] scraper: Extraction complete: 1/1 articles succeeded
-2026-06-16 06:35:49,945 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
-2026-06-16 06:35:49,945 [INFO] llm_analyzer: [1/1] Google exposes China espionage group that’s been lurking in 
-2026-06-16 06:35:49,945 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Google exposes China espionage group that’s been lurking in networks u
-2026-06-16 06:39:50,220 [INFO] attack_mapper:   The threat group exploited externally facing REDCap ser -> T1668, T1108, T1525
-2026-06-16 06:39:52,333 [INFO] attack_mapper:   The threat group used a custom backdoor to steal admini -> T1212, T1589.001, T1003
-2026-06-16 06:39:54,447 [INFO] attack_mapper:   The threat group abused domain compliance rules to stea -> T1583.001, T1069.002, T1590.001
-2026-06-16 06:39:56,562 [INFO] attack_mapper:   The threat group exfiltrated data using a Gmail account -> T1586.002, T1585.002, T1087
-2026-06-16 06:39:56,563 [INFO] attack_mapper: ATT&CK mapping: 4 behaviors -> 12 techniques
-2026-06-16 06:39:56,772 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-15_Google_exposes_China_espionage_group_that_s_been_l.md
-2026-06-16 06:39:56,774 [INFO] report_generator: IOC CSV: C:\Users\threa\cyber_helper\reports\2026-06-16_iocs.csv (2 IOCs)
+2026-06-17 17:31:02,518 [INFO] attack_mapper: Loaded 858 ATT&CK techniques
+2026-06-17 17:31:02,869 [INFO] rss_ingestor: Fetching feed: The Hacker News
+2026-06-17 17:31:05,262 [INFO] rss_ingestor: Fetching feed: BleepingComputer
+2026-06-17 17:31:05,771 [INFO] rss_ingestor: Fetching feed: The Record
+2026-06-17 17:31:07,248 [INFO] rss_ingestor: Fetching feed: Krebs on Security
+2026-06-17 17:31:07,792 [INFO] rss_ingestor: Fetching feed: Dark Reading
+2026-06-17 17:31:09,544 [INFO] rss_ingestor: Fetching feed: Schneier on Security
+2026-06-17 17:31:10,060 [INFO] rss_ingestor: Fetching feed: CyberScoop
+2026-06-17 17:31:10,608 [INFO] rss_ingestor: Fetching feed: SecurityWeek
+2026-06-17 17:31:14,102 [INFO] rss_ingestor: Total articles collected: 36
+2026-06-17 17:31:14,106 [INFO] scraper: Extracting: https://www.darkreading.com/cyberattacks-data-breaches/fileless-phantom-stealer-
+2026-06-17 17:31:14,695 [INFO] scraper: Extraction complete: 1/1 articles succeeded
+2026-06-17 17:31:14,743 [INFO] database: Database ready: sqlite:///M:\cyber_intel/data/cti.db
+2026-06-17 17:31:14,757 [INFO] llm_analyzer: [1/1] Fileless Phantom Stealer Targets Browser Credentials
+2026-06-17 17:31:14,757 [INFO] llm_analyzer: Analyzing [CyberCrew/notmythos-8b]: Fileless Phantom Stealer Targets Browser Credentials
+2026-06-17 17:32:52,891 [WARNING] attack_mapper: ATT&CK search failed: 404 Client Error: Not Found for url: http://localhost:11434/api/embed
+2026-06-17 17:32:54,919 [WARNING] attack_mapper: ATT&CK search failed: 404 Client Error: Not Found for url: http://localhost:11434/api/embed
+2026-06-17 17:32:54,921 [INFO] attack_mapper: ATT&CK mapping: 2 behaviors -> 0 techniques
+2026-06-17 17:32:54,949 [INFO] report_generator: Report written: M:\cyber_intel\reports\2026-06-16_Fileless_Phantom_Stealer_Targets_Browser_Credentia.md
+2026-06-17 17:32:54,951 [INFO] report_generator: IOC CSV: M:\cyber_intel\reports\2026-06-17_iocs.csv (2 IOCs)
+2026-06-17 18:03:56,798 [INFO] attack_mapper: Loaded 858 ATT&CK techniques
+2026-06-17 18:03:57,229 [INFO] rss_ingestor: Fetching feed: The Hacker News
+2026-06-17 18:03:58,407 [INFO] rss_ingestor: Fetching feed: BleepingComputer
+2026-06-17 18:03:59,776 [INFO] rss_ingestor: Fetching feed: The Record
+2026-06-17 18:04:01,629 [INFO] rss_ingestor: Fetching feed: Krebs on Security
+2026-06-17 18:04:02,202 [INFO] rss_ingestor: Fetching feed: Dark Reading
+2026-06-17 18:04:03,628 [INFO] rss_ingestor: Fetching feed: Schneier on Security
+2026-06-17 18:04:04,088 [INFO] rss_ingestor: Fetching feed: CyberScoop
+2026-06-17 18:04:04,578 [INFO] rss_ingestor: Fetching feed: SecurityWeek
+2026-06-17 18:04:08,189 [INFO] rss_ingestor: Total articles collected: 35
+2026-06-17 18:04:08,191 [INFO] scraper: Extracting: https://www.darkreading.com/cyberattacks-data-breaches/fileless-phantom-stealer-
+2026-06-17 18:04:08,747 [INFO] scraper: Extraction complete: 1/1 articles succeeded
+2026-06-17 18:04:08,776 [INFO] database: Database ready: sqlite:///M:\cyber_intel/data/cti.db
+2026-06-17 18:04:08,784 [INFO] llm_analyzer: [1/1] Fileless Phantom Stealer Targets Browser Credentials
+2026-06-17 18:04:08,784 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Fileless Phantom Stealer Targets Browser Credentials
+2026-06-17 18:18:49,997 [WARNING] attack_mapper: ATT&CK search failed: 404 Client Error: Not Found for url: http://localhost:11434/api/embed
+2026-06-17 18:18:52,047 [WARNING] attack_mapper: ATT&CK search failed: 404 Client Error: Not Found for url: http://localhost:11434/api/embed
+2026-06-17 18:18:54,104 [WARNING] attack_mapper: ATT&CK search failed: 404 Client Error: Not Found for url: http://localhost:11434/api/embed
+2026-06-17 18:18:56,177 [WARNING] attack_mapper: ATT&CK search failed: 404 Client Error: Not Found for url: http://localhost:11434/api/embed
+2026-06-17 18:18:58,252 [WARNING] attack_mapper: ATT&CK search failed: 404 Client Error: Not Found for url: http://localhost:11434/api/embed
+2026-06-17 18:19:00,310 [WARNING] attack_mapper: ATT&CK search failed: 404 Client Error: Not Found for url: http://localhost:11434/api/embed
+2026-06-17 18:19:02,372 [WARNING] attack_mapper: ATT&CK search failed: 404 Client Error: Not Found for url: http://localhost:11434/api/embed
+2026-06-17 18:19:04,439 [WARNING] attack_mapper: ATT&CK search failed: 404 Client Error: Not Found for url: http://localhost:11434/api/embed
+2026-06-17 18:19:06,495 [WARNING] attack_mapper: ATT&CK search failed: 404 Client Error: Not Found for url: http://localhost:11434/api/embed
+2026-06-17 18:19:06,503 [INFO] attack_mapper: ATT&CK mapping: 9 behaviors -> 0 techniques
+2026-06-17 18:19:06,609 [ERROR] report_generator: Failed to write report: 'ThreatActor' object has no attribute 'attribution'
+2026-06-17 18:19:06,621 [INFO] report_generator: IOC CSV: M:\cyber_intel\reports\2026-06-17_iocs.csv (1 IOCs)

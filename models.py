@@ -32,6 +32,7 @@ class MalwareType(str, Enum):
 class IOCType(str, Enum):
     IP       = "IP Address"
     DOMAIN   = "Domain"
+    MALWARE  = "Malware Name"
     URL      = "URL"
     EMAIL    = "Email"
     MD5      = "MD5"
@@ -82,7 +83,6 @@ class ExtractedArticle(BaseModel):
 class ThreatActor(BaseModel):
     name:        str
     aliases:     list[str]       = []
-    attribution: Optional[str]   = None   # nation state
     motivation:  Optional[str]   = None
     confidence:  ConfidenceLevel = ConfidenceLevel.UNKNOWN
     evidence:    Optional[str]   = None
