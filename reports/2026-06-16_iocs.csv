@@ -1,3 +1,0 @@
-value,type,confidence,context,source,url
-REDCap,Domain,High,The threat group exploited externally facing REDCap servers to deploy the INFINITERED backdoor.,CyberScoop,https://cyberscoop.com/google-unc6508-china-espionage-threat/
-Gmail account,Email,High,"The threat group used a Gmail account to exfiltrate data, which was disabled by Google.",CyberScoop,https://cyberscoop.com/google-unc6508-china-espionage-threat/

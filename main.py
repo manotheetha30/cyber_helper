@@ -109,7 +109,7 @@ def run_pipeline(lookback_days: int = 1) -> dict:
         ]
         # ── Extraction ───────────────────────────────────────────────────────
         t = prog.add_task("[cyan]Stage 2: Extracting content...", total=None)
-        extracted = extract_articles(rss_articles[9:10])
+        extracted = extract_articles(rss_articles[15:16])
         stats["articles_extracted"] = len(extracted)
         prog.update(t, description=f"[green]Stage 2 done — {len(extracted)} extracted")
         for art in extracted:

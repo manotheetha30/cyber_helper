@@ -740,3 +740,200 @@ tenacity.RetryError: RetryError[<Future at 0x1b94c8e0c50 state=finished raised R
 2026-06-18 21:56:23,958 [INFO] attack_mapper: ATT&CK mapping: 8 behaviors -> 8 techniques
 2026-06-18 21:56:23,975 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-18_Microsoft_Details_Windows_Clipper_Malware_Campaign.md
 2026-06-18 21:56:23,977 [INFO] report_generator: IOC CSV: C:\Users\threa\cyber_helper\reports\2026-06-19_iocs.csv (0 IOCs)
+2026-06-18 23:02:18,955 [INFO] sentence_transformers.base.model: No device provided, using cpu
+2026-06-18 23:02:18,957 [INFO] sentence_transformers.base.model: Loading SentenceTransformer model from ./e5_attack_mapper.
+2026-06-18 23:02:19,280 [INFO] attack_mapper: Loaded 872 ATT&CK techniques
+2026-06-18 23:02:19,496 [INFO] rss_ingestor: Fetching feed: The Hacker News
+2026-06-18 23:02:20,904 [INFO] rss_ingestor: Fetching feed: BleepingComputer
+2026-06-18 23:02:21,296 [INFO] rss_ingestor: Fetching feed: The Record
+2026-06-18 23:02:21,892 [INFO] rss_ingestor: Fetching feed: Krebs on Security
+2026-06-18 23:02:22,297 [INFO] rss_ingestor: Fetching feed: Dark Reading
+2026-06-18 23:02:23,893 [INFO] rss_ingestor: Fetching feed: Schneier on Security
+2026-06-18 23:02:24,778 [INFO] rss_ingestor: Fetching feed: CyberScoop
+2026-06-18 23:02:25,205 [INFO] rss_ingestor: Fetching feed: SecurityWeek
+2026-06-18 23:02:26,704 [INFO] rss_ingestor: Total articles collected: 43
+2026-06-18 23:02:26,704 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/gentlemen-ransomware-uses-multipl
+2026-06-18 23:02:28,462 [INFO] scraper: Extracting: https://cyberscoop.com/congress-tees-up-no-fakes-act-aiming-at-ai-generated-deep
+2026-06-18 23:02:28,829 [INFO] scraper: Extracting: https://www.darkreading.com/cyber-risk/novo-nordisk-breach-exposes-dev-pipeline-
+2026-06-18 23:02:33,727 [WARNING] scraper: HTTP fetch failed for https://www.darkreading.com/cyber-risk/novo-nordisk-breach-exposes-dev-pipeline-risk: RetryError[<Future at 0x1ef5a838140 state=finished raised HTTPError>]
+2026-06-18 23:02:33,727 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/nintendo-confirms-data-stolen-in-
+2026-06-18 23:02:35,428 [INFO] scraper: Extracting: https://www.darkreading.com/application-security/fifa-bug-world-cup-streams-remo
+2026-06-18 23:02:40,343 [WARNING] scraper: HTTP fetch failed for https://www.darkreading.com/application-security/fifa-bug-world-cup-streams-remote-takeover: RetryError[<Future at 0x1ef5a8b2f00 state=finished raised HTTPError>]
+2026-06-18 23:02:40,343 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/f5-patches-two-critical-nginx-open.html
+2026-06-18 23:02:41,140 [INFO] scraper: Extracting: https://www.darkreading.com/cyberattacks-data-breaches/salesforce-data-thefts-kl
+2026-06-18 23:02:46,064 [WARNING] scraper: HTTP fetch failed for https://www.darkreading.com/cyberattacks-data-breaches/salesforce-data-thefts-klue-app-compromise: RetryError[<Future at 0x1ef5a6dbf50 state=finished raised HTTPError>]
+2026-06-18 23:02:46,065 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/usb-worm-spreads-crypto-stealing-
+2026-06-18 23:02:47,861 [INFO] scraper: Extracting: https://cyberscoop.com/accenture-industrial-cybersecurity-acquisition-dragos-net
+2026-06-18 23:02:48,194 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/microsoft-details-windows-clipper.html
+2026-06-18 23:02:48,946 [INFO] scraper: Extracting: https://therecord.media/mackay-sugar-cyberattack-claimed-gentlemen
+2026-06-18 23:02:49,710 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/klue-oauth-breach-linked-to-icaru
+2026-06-18 23:02:51,517 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/inc-ransomware-claims-830-victims-since.html
+2026-06-18 23:02:52,244 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/dragonforce-hackers-abuse-microsoft.html
+2026-06-18 23:02:53,353 [INFO] scraper: Extracting: https://www.securityweek.com/accenture-to-acquire-majority-stake-in-dragos-all-o
+2026-06-18 23:02:54,211 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-t
+2026-06-18 23:02:56,014 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/fortibleed-leak-exposes-fortinet-
+2026-06-18 23:02:57,033 [INFO] scraper: Extracting: https://www.securityweek.com/no-exploits-required/
+2026-06-18 23:02:57,884 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/apple-fixes-beats-studio-buds-fla
+2026-06-18 23:02:59,612 [INFO] scraper: Extracting: https://www.schneier.com/blog/archives/2026/06/embedding-forbidden-text-in-spywa
+2026-06-18 23:02:59,963 [INFO] scraper: Extracting: https://www.securityweek.com/critical-command-execution-vulnerability-patched-in
+2026-06-18 23:03:00,848 [INFO] scraper: Extraction complete: 18/21 articles succeeded
+2026-06-18 23:03:00,848 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
+2026-06-18 23:03:00,923 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Gentlemen ransomware uses multiple EDR killers to disable defenses
+2026-06-18 23:26:11,576 [ERROR] llm_analyzer: LLM failed for 'Gentlemen ransomware uses multiple EDR killers to disable de': RetryError[<Future at 0x1ef5aa13fe0 state=finished raised ReadTimeout>]
+Traceback (most recent call last):
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 534, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connection.py", line 571, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 1411, in getresponse
+    response.begin()
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 324, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\http\client.py", line 285, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\socket.py", line 707, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+TimeoutError: timed out
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 842, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\retry.py", line 498, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 788, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 536, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=read_timeout)
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\urllib3\connectionpool.py", line 367, in _raise_timeout
+    raise ReadTimeoutError(
+urllib3.exceptions.ReadTimeoutError: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=500)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\tenacity\__init__.py", line 473, in __call__
+    result = fn(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^
+  File "c:\Users\threa\cyber_helper\llm_analyzer.py", line 124, in _ollama
+    resp = _requests.post(
+           ^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 134, in post
+    return request("post", url, data=data, json=json, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\api.py", line 71, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPConnectionPool(host='localhost', port=11434): Read timed out. (read timeout=500)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "c:\Users\threa\cyber_helper\llm_analyzer.py", line 420, in analyze_article
+    raw  = _ollama(prompt, model=model)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\tenacity\__init__.py", line 331, in wrapped_f
+    return copy(f, *args, **kw)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\tenacity\__init__.py", line 470, in __call__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\tenacity\__init__.py", line 371, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\threa\AppData\Local\Programs\Python\Python312\Lib\site-packages\tenacity\__init__.py", line 414, in exc_check
+    raise retry_exc from fut.exception()
+tenacity.RetryError: RetryError[<Future at 0x1ef5aa13fe0 state=finished raised ReadTimeout>]
+2026-06-18 23:26:11,869 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Congress tees up No FAKES Act, aiming at AI-generated deepfakes
+2026-06-18 23:26:11,871 [INFO] llm_analyzer:   Processing 3 chunks from full article...
+2026-06-18 23:28:08,395 [INFO] sentence_transformers.base.model: No device provided, using cpu
+2026-06-18 23:28:08,395 [INFO] sentence_transformers.base.model: Loading SentenceTransformer model from ./e5_attack_mapper.
+2026-06-18 23:28:08,695 [INFO] attack_mapper: Loaded 872 ATT&CK techniques
+2026-06-18 23:28:08,912 [INFO] rss_ingestor: Fetching feed: The Hacker News
+2026-06-18 23:28:10,185 [INFO] rss_ingestor: Fetching feed: BleepingComputer
+2026-06-18 23:28:10,581 [INFO] rss_ingestor: Fetching feed: The Record
+2026-06-18 23:28:11,167 [INFO] rss_ingestor: Fetching feed: Krebs on Security
+2026-06-18 23:28:11,590 [INFO] rss_ingestor: Fetching feed: Dark Reading
+2026-06-18 23:28:13,084 [INFO] rss_ingestor: Fetching feed: Schneier on Security
+2026-06-18 23:28:13,446 [INFO] rss_ingestor: Fetching feed: CyberScoop
+2026-06-18 23:28:13,840 [INFO] rss_ingestor: Fetching feed: SecurityWeek
+2026-06-18 23:28:16,327 [INFO] rss_ingestor: Total articles collected: 43
+2026-06-18 23:28:16,328 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/klue-oauth-breach-linked-to-icaru
+2026-06-18 23:28:18,168 [INFO] scraper: Extraction complete: 1/1 articles succeeded
+2026-06-18 23:28:18,197 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
+2026-06-18 23:28:18,204 [INFO] llm_analyzer: Analyzing [qwen3:8b]: Klue OAuth breach linked to 'Icarus' Salesforce data theft attacks
+2026-06-18 23:28:18,204 [INFO] llm_analyzer:   Processing 2 chunks from full article...
+2026-06-18 23:45:07,308 [WARNING] llm_analyzer:   Chunk 1 failed: RetryError[<Future at 0x1882afb3380 state=finished raised ReadTimeout>]
+2026-06-18 23:51:10,329 [INFO] sentence_transformers.base.model: No device provided, using cpu
+2026-06-18 23:51:10,329 [INFO] sentence_transformers.base.model: Loading SentenceTransformer model from ./e5_attack_mapper.
+2026-06-18 23:51:10,621 [INFO] attack_mapper: Loaded 872 ATT&CK techniques
+2026-06-18 23:51:10,781 [INFO] rss_ingestor: Fetching feed: The Hacker News
+2026-06-18 23:51:11,687 [INFO] rss_ingestor: Fetching feed: BleepingComputer
+2026-06-18 23:51:12,087 [INFO] rss_ingestor: Fetching feed: The Record
+2026-06-18 23:51:13,334 [INFO] rss_ingestor: Fetching feed: Krebs on Security
+2026-06-18 23:51:13,759 [INFO] rss_ingestor: Fetching feed: Dark Reading
+2026-06-18 23:51:14,569 [INFO] rss_ingestor: Fetching feed: Schneier on Security
+2026-06-18 23:51:15,273 [INFO] rss_ingestor: Fetching feed: CyberScoop
+2026-06-18 23:51:15,663 [INFO] rss_ingestor: Fetching feed: SecurityWeek
+2026-06-18 23:51:17,204 [INFO] rss_ingestor: Total articles collected: 42
+2026-06-18 23:51:17,205 [INFO] scraper: Extracting: https://thehackernews.com/2026/06/dragonforce-hackers-abuse-microsoft.html
+2026-06-18 23:51:18,139 [INFO] scraper: Extraction complete: 1/1 articles succeeded
+2026-06-18 23:51:18,150 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
+2026-06-18 23:51:18,157 [INFO] llm_analyzer: Analyzing [qwen3:8b]: DragonForce Hackers Abuse Microsoft Teams Relays to Hide Backdoor.Turn
+2026-06-18 23:51:18,157 [INFO] llm_analyzer:   Processing 1 chunks from full article...
+2026-06-19 00:08:07,269 [WARNING] llm_analyzer:   Chunk 1 failed: RetryError[<Future at 0x239e8d76b70 state=finished raised ReadTimeout>]
+2026-06-19 00:08:07,269 [ERROR] llm_analyzer: LLM failed for 'DragonForce Hackers Abuse Microsoft Teams Relays to Hide Bac': All chunks failed to extract
+Traceback (most recent call last):
+  File "c:\Users\threa\cyber_helper\llm_analyzer.py", line 402, in analyze_article
+    raise ValueError("All chunks failed to extract")
+ValueError: All chunks failed to extract
+2026-06-19 00:08:07,302 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-18_DragonForce_Hackers_Abuse_Microsoft_Teams_Relays_t.md
+2026-06-19 00:08:07,307 [INFO] report_generator: IOC CSV: C:\Users\threa\cyber_helper\reports\2026-06-19_iocs.csv (0 IOCs)
+2026-06-19 00:45:22,957 [INFO] sentence_transformers.base.model: No device provided, using cpu
+2026-06-19 00:45:22,957 [INFO] sentence_transformers.base.model: Loading SentenceTransformer model from ./e5_attack_mapper.
+2026-06-19 00:45:23,284 [INFO] attack_mapper: Loaded 872 ATT&CK techniques
+2026-06-19 00:45:23,510 [INFO] rss_ingestor: Fetching feed: The Hacker News
+2026-06-19 00:45:24,903 [INFO] rss_ingestor: Fetching feed: BleepingComputer
+2026-06-19 00:45:25,286 [INFO] rss_ingestor: Fetching feed: The Record
+2026-06-19 00:45:25,932 [INFO] rss_ingestor: Fetching feed: Krebs on Security
+2026-06-19 00:45:26,342 [INFO] rss_ingestor: Fetching feed: Dark Reading
+2026-06-19 00:45:27,155 [INFO] rss_ingestor: Fetching feed: Schneier on Security
+2026-06-19 00:45:27,984 [INFO] rss_ingestor: Fetching feed: CyberScoop
+2026-06-19 00:45:28,387 [INFO] rss_ingestor: Fetching feed: SecurityWeek
+2026-06-19 00:45:29,913 [INFO] rss_ingestor: Total articles collected: 41
+2026-06-19 00:45:29,916 [INFO] scraper: Extracting: https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-t
+2026-06-19 00:45:31,731 [INFO] scraper: Extraction complete: 1/1 articles succeeded
+2026-06-19 00:45:31,753 [INFO] database: Database ready: sqlite:///C:\Users\threa\cyber_helper/data/cti.db
+2026-06-19 00:45:31,765 [INFO] llm_analyzer: Analyzing [qwen3:8b]: ShapedPlugin update flow hacked to infect WordPress sites
+2026-06-19 00:45:31,765 [INFO] llm_analyzer:   Processing 1 chunks from full article...
+2026-06-19 00:53:22,993 [INFO] attack_mapper:   Malware activates via WordPress admin panel access      -> T1546.003
+2026-06-19 00:53:23,050 [INFO] attack_mapper:   Establishes command-and-control communication           -> T1102.003
+2026-06-19 00:53:23,123 [INFO] attack_mapper:   Installs fake plugins to impersonate WooCommerce compon -> T1001.003
+2026-06-19 00:53:23,197 [INFO] attack_mapper:   Steals WordPress credentials and sensitive data         -> T1110.004
+2026-06-19 00:53:23,271 [INFO] attack_mapper:   Exfiltrates WooCommerce order data                      -> T1560
+2026-06-19 00:53:23,332 [INFO] attack_mapper:   Self-deletes to erase evidence                          -> T1070.009
+2026-06-19 00:53:23,332 [INFO] attack_mapper: ATT&CK mapping: 6 behaviors -> 6 techniques
+2026-06-19 00:53:23,370 [INFO] report_generator: Report written: C:\Users\threa\cyber_helper\reports\2026-06-18_ShapedPlugin_update_flow_hacked_to_infect_WordPres.md
+2026-06-19 00:53:23,372 [INFO] report_generator: IOC CSV: C:\Users\threa\cyber_helper\reports\2026-06-19_iocs.csv (6 IOCs)

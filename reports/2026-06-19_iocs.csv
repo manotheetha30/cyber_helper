@@ -1,1 +1,7 @@
 value,type,confidence,context,source,url
+Product Slider Pro <3.5.4,Filename,High,Affected plugin version,BleepingComputer,https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-to-infect-wordpress-sites/
+Real Testimonials Pro 3.2.5,Filename,High,Affected plugin version,BleepingComputer,https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-to-infect-wordpress-sites/
+Smart Post Show Pro <4.0.2,Filename,High,Affected plugin version,BleepingComputer,https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-to-infect-wordpress-sites/
+CVE-2026-10735,CVE,High,Assigned CVE for the incident,BleepingComputer,https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-to-infect-wordpress-sites/
+CVE-2026-49777,CVE,High,Duplicate CVE submitted for the incident,BleepingComputer,https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-to-infect-wordpress-sites/
+LicenseLoader.php,Filename,High,Malicious loader file,BleepingComputer,https://www.bleepingcomputer.com/news/security/shapedplugin-update-flow-hacked-to-infect-wordpress-sites/
