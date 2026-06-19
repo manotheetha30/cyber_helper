@@ -22,15 +22,6 @@ LLM_TEMPERATURE: float = float(os.getenv("CTI_LLM_TEMPERATURE", "0.1"))
 LLM_MAX_TOKENS:  int  = int(os.getenv("CTI_LLM_MAX_TOKENS",    "4096"))
 LLM_CONTEXT_WINDOW: int = int(os.getenv("CTI_LLM_CONTEXT_WINDOW", "32768"))
 
-# ── RAG / ChromaDB ────────────────────────────────────────────────────────────
-RAG_ENABLED:      bool = os.getenv("CTI_RAG_ENABLED", "true").lower() == "true"
-CHROMA_PERSIST_DIR: str = os.getenv("CTI_CHROMA_DIR", str(BASE_DIR / "data" / "chromadb"))
-EMBED_MODEL:      str  = os.getenv("CTI_EMBED_MODEL", "sentence-transformers/all-MiniLM-L6-v2")
-RAG_TOP_K:        int  = int(os.getenv("CTI_RAG_TOP_K", "5"))
-ATTACK_STIX_URL:  str  = (
-    "https://raw.githubusercontent.com/mitre/cti/master/"
-    "enterprise-attack/enterprise-attack.json"
-)
 
 # ── Article extraction ────────────────────────────────────────────────────────
 MIN_ARTICLE_LENGTH: int = int(os.getenv("CTI_MIN_ARTICLE_LEN", "500"))

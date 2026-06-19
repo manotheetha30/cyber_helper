@@ -4,7 +4,6 @@ One hypothesis per tactic — all techniques and behaviors under that tactic
 are consolidated into a single, richer hunting hypothesis.
 
 THREAT-ACTOR-CENTRIC: Hypotheses describe what an attacker would do and why.
-
 Tactics covered (MITRE ATT&CK v15+):
   - Reconnaissance, Resource Development, Initial Access, Execution, Persistence
   - Privilege Escalation, Stealth, Defense Impairment, Credential Access
@@ -22,7 +21,6 @@ Example:
     ATT&CK technique(s): T1059.001, T1059.003, T1204.002."
 """
 from __future__ import annotations
-import logging
 from collections import defaultdict
 
 from models import (
@@ -30,7 +28,6 @@ from models import (
     HuntHypothesis, RawBehavior, ConfidenceLevel,
 )
 
-logger = logging.getLogger(__name__)
 
 
 # ── Lookup tables ─────────────────────────────────────────────────────────────
@@ -183,13 +180,6 @@ def _best_sigma(technique_ids: list[str]) -> str | None:
     return None
 
 
-def _tactic_confidence(mappings: list[ATTACKMapping]) -> ConfidenceLevel:
-    """Overall confidence = highest confidence among the tactic's mappings."""
-    order = [ConfidenceLevel.HIGH, ConfidenceLevel.MEDIUM, ConfidenceLevel.LOW, ConfidenceLevel.UNKNOWN]
-    for level in order:
-        if any(m.confidence == level for m in mappings):
-            return level
-    return ConfidenceLevel.UNKNOWN
 
 
 def _build_behavior_phrase(observed_behaviors: list[str]) -> str:
@@ -246,7 +236,6 @@ def _build_tactic_hypothesis(
     Hypothesis is threat-actor-centric: explains what an attacker would do and why.
     """
     # Sort mappings by similarity score descending — best match leads
-    mappings = sorted(mappings, key=lambda m: m.similarity_score, reverse=True)
 
     technique_ids   = [m.technique_id   for m in mappings]
     technique_names = [m.technique_name for m in mappings]
@@ -300,29 +289,6 @@ def _build_tactic_hypothesis(
 
     # ── Evidence ──────────────────────────────────────────────────────────────
     evidence = " | ".join(evidence_parts[:3]) if evidence_parts else " | ".join(observed[:2])
-
-    # ── Huntability ───────────────────────────────────────────────────────────
-    overall_confidence = _tactic_confidence(mappings)
-    huntable = overall_confidence in (ConfidenceLevel.HIGH, ConfidenceLevel.MEDIUM)
-
-    if huntable and unique_artifacts:
-        reason = (
-            f"{len(technique_ids)} technique(s) mapped under {tactic} with "
-            f"{overall_confidence.value} confidence; {len(unique_artifacts)} observable "
-            f"artifact(s) identified."
-        )
-    elif huntable:
-        reason = (
-            f"{len(technique_ids)} technique(s) mapped under {tactic} with "
-            f"{overall_confidence.value} confidence; no specific artifacts — "
-            "hunt requires baseline tuning."
-        )
-    else:
-        reason = (
-            f"Low similarity score for {tactic} mappings — "
-            "validate ATT&CK mapping before operationalising."
-        )
-
     # ── Sigma stub (best technique in this tactic) ────────────────────────────
     detection_query = _best_sigma(technique_ids)
 
@@ -331,8 +297,6 @@ def _build_tactic_hypothesis(
         evidence            = evidence,
         mitre_techniques    = technique_ids,
         data_sources        = data_sources,
-        huntable            = huntable,
-        huntability_reason  = reason,
         required_telemetry  = telemetry[:6],
         detection_query     = detection_query,
     )
@@ -349,10 +313,7 @@ def generate_hypotheses(report: CTIReport) -> CTIReport:
     and why, making it more intuitive for threat hunters.
     """
     if not report.attack_mappings:
-        logger.debug(
-            "No ATT&CK mappings — skipping hunt generation for '%s'",
-            report.article.rss_article.title[:60],
-        )
+    
         return report
 
     # Group mappings by tactic
@@ -365,17 +326,6 @@ def generate_hypotheses(report: CTIReport) -> CTIReport:
     for tactic, tactic_mappings in by_tactic.items():
         h = _build_tactic_hypothesis(tactic, tactic_mappings, report.behaviors)
         hypotheses.append(h)
-        logger.info(
-            "  [%s] %d technique(s) → hypothesis huntable=%s",
-            tactic, len(tactic_mappings), h.huntable,
-        )
-
-    huntable_count = sum(1 for h in hypotheses if h.huntable)
-    logger.info(
-        "Hunt generation: %d tactic(s) → %d hypotheses (%d huntable) for '%s'",
-        len(by_tactic), len(hypotheses), huntable_count,
-        report.article.rss_article.title[:50],
-    )
 
     report.hunt_hypotheses = hypotheses
     return report

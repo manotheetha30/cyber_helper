@@ -5,7 +5,6 @@ Three-stage pipeline: A (LLM extract) → B (ATT&CK map) → C (hunt generate)
 Usage:
     python main.py                    # run once (yesterday's articles)
     python main.py --schedule         # daily cron at configured time
-    python main.py --init-rag         # ingest ATT&CK STIX into ChromaDB
     python main.py --lookback 3       # articles from last 3 days
     python main.py --verbose          # debug logging
 """
@@ -42,7 +41,7 @@ RELEVANT_KEYWORDS = [
     "authentication bypass"
 ]
 
-EXCLUSION_WORDS=["webinar","tutorial","how to","recap"]
+EXCLUSION_WORDS=["webinar","tutorial","how to","recap","bulletin"]
 console = Console()
 
 
@@ -110,17 +109,14 @@ def run_pipeline(lookback_days: int = 1) -> dict:
         ]
         # ── Extraction ───────────────────────────────────────────────────────
         t = prog.add_task("[cyan]Stage 2: Extracting content...", total=None)
-        extracted = extract_articles(rss_articles[1:2])
+        extracted = extract_articles(rss_articles[9:10])
         stats["articles_extracted"] = len(extracted)
         prog.update(t, description=f"[green]Stage 2 done — {len(extracted)} extracted")
-
         for art in extracted:
             save_article(art)
-
         if not extracted:
             console.print("[yellow]No articles extracted. Exiting.")
             return stats
-
         # ── Stage A: LLM extraction ───────────────────────────────────────────
         t = prog.add_task(f"[cyan]Stage A: LLM extraction ({LLM_MODEL})...", total=None)
         reports = analyze_articles(extracted)
@@ -130,7 +126,7 @@ def run_pipeline(lookback_days: int = 1) -> dict:
                                    f"{stats['iocs_extracted']} IOCs")
 
         # ── Stage B: ATT&CK mapping ───────────────────────────────────────────
-        t = prog.add_task("[cyan]Stage B: ATT&CK mapping (ChromaDB)...", total=None)
+        t = prog.add_task("[cyan]Stage B: ATT&CK mapping...", total=None)
         reports = map_reports(reports)
         stats["attack_mappings"] = sum(len(r.attack_mappings) for r in reports)
         prog.update(t, description=f"[green]Stage B done — {stats['attack_mappings']} techniques mapped")
@@ -139,8 +135,7 @@ def run_pipeline(lookback_days: int = 1) -> dict:
         t = prog.add_task("[cyan]Stage C: Generating hunt hypotheses...", total=None)
         reports = generate_all_hypotheses(reports)
         stats["hunt_hypotheses"] = sum(len(r.hunt_hypotheses) for r in reports)
-        prog.update(t, description=f"[green]Stage C done — {stats['hunt_hypotheses']} hypotheses")
-
+        prog.update(t, description=f"[green]Stage C done ")
         # ── Persist + output ──────────────────────────────────────────────────
         t = prog.add_task("[cyan]Writing reports...", total=None)
         for r in reports:

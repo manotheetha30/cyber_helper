@@ -127,8 +127,6 @@ class ATTACKMapping(BaseModel):
     technique_id:      str   # e.g. T1059.001
     technique_name:    str
     observed_behavior: str
-    confidence:        ConfidenceLevel
-    similarity_score:  float = 0.0   # cosine similarity from ChromaDB
 
 
 # ── Hunt hypothesis (Stage C — deterministic) ────────────────────────────────
@@ -138,8 +136,6 @@ class HuntHypothesis(BaseModel):
     evidence:           str
     mitre_techniques:   list[str]       = []
     data_sources:       list[DataSource] = []
-    huntable:           bool            = False
-    huntability_reason: str             = ""
     required_telemetry: list[str]       = []
     detection_query:    Optional[str]   = None
 

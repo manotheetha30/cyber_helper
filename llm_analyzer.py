@@ -37,7 +37,7 @@ logger = logging.getLogger(__name__)
 # ── Chunking configuration ────────────────────────────────────────────────────
 
 # Each chunk is this many characters max (safe for model context)
-CHUNK_SIZE = 8_000
+CHUNK_SIZE = 4_000
 
 # Overlap between chunks (for context continuity)
 CHUNK_OVERLAP = 1_500
@@ -120,15 +120,13 @@ def _ollama(prompt: str, model: str = LLM_MODEL) -> str:
             {"role": "user",   "content": prompt},
         ],
     }
-    # Qwen3 reasoning mode — improves extraction accuracy with minimal extra cost
-    if "qwen3" in model.lower():
-        payload["think"] = False
 
     resp = _requests.post(
         f"{OLLAMA_BASE_URL}/api/chat",
         json=payload,
         timeout=500,
     )
+    print("call succe")
     resp.raise_for_status()
     return resp.json()["message"]["content"]
 
@@ -284,7 +282,6 @@ def _build_report(article: ExtractedArticle, data: dict, model: str, elapsed: fl
         ThreatActor(
             name        = ta.get("name", "Unknown"),
             aliases     = ta.get("aliases", []),
-            attribution = ta.get("attribution"),
             motivation  = ta.get("motivation"),
             confidence  = _conf(ta.get("confidence")),
             evidence    = ta.get("evidence"),
@@ -333,7 +330,6 @@ def _build_report(article: ExtractedArticle, data: dict, model: str, elapsed: fl
             category   = b.get("category", "Unknown"),
             evidence   = b.get("evidence", ""),
             artifacts  = b.get("artifacts", []),
-            confidence = _conf(b.get("confidence")),
         )
         for b in (data.get("behaviors") or [])
         if b.get("behavior")
@@ -433,7 +429,7 @@ def analyze_article(article: ExtractedArticle, model: str = LLM_MODEL, use_chunk
         )
     
     except Exception as exc:
-        logger.error("LLM failed for '%s': %s", rss.title[:60], exc)
+        logger.exception("LLM failed for '%s': %s", rss.title[:60], exc)
         report = CTIReport(
             article           = article,
             executive_summary = f"[Extraction failed: {exc}]",
@@ -458,6 +454,5 @@ def analyze_articles(articles: list[ExtractedArticle], model: str = LLM_MODEL, u
     """
     reports = []
     for i, art in enumerate(articles, 1):
-        logger.info("[%d/%d] %s", i, len(articles), art.rss_article.title[:60])
         reports.append(analyze_article(art, model=model, use_chunking=use_chunking))
     return reports

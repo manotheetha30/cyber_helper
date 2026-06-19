@@ -1,10 +1,9 @@
 from __future__ import annotations
-
 import logging
 import pickle
+from sentence_transformers import SentenceTransformer
 import requests
 import numpy as np
-
 from models import (
     ATTACKMapping,
     ConfidenceLevel,
@@ -12,83 +11,24 @@ from models import (
     RawBehavior,
 )
 
-from settings import RAG_TOP_K
-
 logger = logging.getLogger(__name__)
-
+model = SentenceTransformer(
+    "./e5_attack_mapper"
+)
 # ------------------------------------------------------------------
 # Load ATT&CK embeddings
 # ------------------------------------------------------------------
 
-with open("attack_embeddings.pkl", "rb") as f:
-    db = pickle.load(f)
-
-TECHNIQUES = db["techniques"]
-
-EMBEDDINGS = np.array(
-    db["embeddings"],
-    dtype=np.float32,
-).squeeze(1)
+with open("attack_embeddings_transformer.pkl", "rb") as f:
+    data = pickle.load(f)
+TECHNIQUES_IDS = data["ids"]
+TECHNIQUES_METADATA=data["metadata"]
+EMBEDDINGS = data["embeddings"]
 
 logger.info(
     "Loaded %d ATT&CK techniques",
-    len(TECHNIQUES),
+    len(TECHNIQUES_IDS),
 )
-
-# ------------------------------------------------------------------
-# Confidence thresholds
-# ------------------------------------------------------------------
-
-_HIGH_SIMILARITY = 0.80
-_MEDIUM_SIMILARITY = 0.60
-_MIN_SIMILARITY = 0
-
-
-# ------------------------------------------------------------------
-# Ollama embedding helper
-# ------------------------------------------------------------------
-
-def get_embedding(text: str) -> np.ndarray:
-
-    r = requests.post(
-        "http://localhost:11434/api/embed",
-        json={
-            "model": "nomic-embed-text",
-            "input": text,
-        },
-        timeout=60,
-    )
-
-    r.raise_for_status()
-
-    emb = np.array(
-        r.json()["embeddings"][0],
-        dtype=np.float32,
-    )
-
-    norm = np.linalg.norm(emb)
-
-    if norm > 0:
-        emb = emb / norm
-
-    return emb
-
-
-# ------------------------------------------------------------------
-# Similarity -> confidence
-# ------------------------------------------------------------------
-
-def _score_to_confidence(
-    score: float,
-) -> ConfidenceLevel:
-
-    if score >= _HIGH_SIMILARITY:
-        return ConfidenceLevel.HIGH
-
-    if score >= _MEDIUM_SIMILARITY:
-        return ConfidenceLevel.MEDIUM
-
-    return ConfidenceLevel.LOW
 
 
 # ------------------------------------------------------------------
@@ -124,10 +64,7 @@ def _build_query(
 # Map one behavior
 # ------------------------------------------------------------------
 
-def map_behavior(
-    behavior: RawBehavior,
-    top_k: int = RAG_TOP_K,
-) -> list[ATTACKMapping]:
+def map_behavior(behavior: RawBehavior) -> list[ATTACKMapping]:
 
     query,tactic_val = _build_query(
         behavior
@@ -135,19 +72,12 @@ def map_behavior(
 
     try:
 
-        query_embedding = get_embedding(
-            query
-        )
-
-        scores = np.dot(
-            EMBEDDINGS,
-            query_embedding,
-        )
-
-        top_indices = np.argsort(
-            scores
-        )[::-1][:top_k]
-
+        query_embedding =model.encode(
+        f"query: {query}",
+        normalize_embeddings=True
+    )
+        scores = EMBEDDINGS @ query_embedding
+        top_k = np.argsort(scores)[::-1][0]
     except Exception as exc:
 
         logger.warning(
@@ -156,49 +86,24 @@ def map_behavior(
         )
 
         return []
+    technique = TECHNIQUES_METADATA[top_k]
 
-    # Find the best match only
-    best_mapping = None
-    best_similarity = _MIN_SIMILARITY
+    best_mapping = ATTACKMapping(
+        tactic=technique["tactic"],
+        technique_id=technique[
+            "attack_id"
+        ],
+        technique_name=technique[
+            "name"
+        ],
+        observed_behavior=behavior.behavior
+    )
 
-    for idx in top_indices:
-
-        similarity = float(
-            scores[idx]
-        )
-
-        if similarity < best_similarity:
-            continue
-
-        technique = TECHNIQUES[idx]
-
-        best_mapping = ATTACKMapping(
-            tactic=tactic_val,
-            technique_id=technique[
-                "attack_id"
-            ],
-            technique_name=technique[
-                "name"
-            ],
-            observed_behavior=behavior.behavior,
-            confidence=_score_to_confidence(
-                similarity
-            ),
-            similarity_score=round(
-                similarity,
-                4,
-            ),
-        )
-
-        logger.debug(
-            "%s -> %s (%0.4f)",
-            behavior.behavior[:50],
-            technique["attack_id"],
-            similarity,
-        )
-
-        # Return only the best match
-        break
+    logger.debug(
+        "%s -> %s (%0.4f)",
+        behavior.behavior[:50],
+        technique["attack_id"]
+    )
 
     return [
         best_mapping
@@ -222,8 +127,7 @@ def map_report(
     for behavior in report.behaviors:
 
         mappings = map_behavior(
-            behavior,
-            top_k=top_k,
+            behavior
         )
 
         all_mappings.extend(
@@ -241,30 +145,9 @@ def map_report(
                 ),
             )
 
-    deduped = {}
 
-    for mapping in all_mappings:
-
-        if (
-            mapping.technique_id
-            not in deduped
-            or
-            mapping.similarity_score
-            >
-            deduped[
-                mapping.technique_id
-            ].similarity_score
-        ):
-            deduped[
-                mapping.technique_id
-            ] = mapping
-
-    report.attack_mappings = sorted(
-        deduped.values(),
-        key=lambda x:
-            x.similarity_score,
-        reverse=True,
-    )
+    report.attack_mappings = all_mappings
+    
 
     logger.info(
         "ATT&CK mapping: %d behaviors -> %d techniques",
